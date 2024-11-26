@@ -17,12 +17,23 @@ available to me.</p>
 
 ## How to Use the Converter
 
+You need following two files from the scripts folder.
+
 ```
-scripts/RRDBNet_arch.py
+RRDBNet_arch.py
 ```
 
 ```
-scripts/converter_RRDB_models.py
+converter_RRDB_models.py
+```
+
+<p align="justify"><code>converter_RRDB_models.py</code> is the converter and <code>RRDBNet_arch.py</code> contains the classes
+which are required to run the converter. The latter file is imported from the converter.</p>
+
+Run the converter as follows:
+
+```
+python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 ```
 
 <p align="justify"></p>
