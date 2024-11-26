@@ -30,13 +30,17 @@ converter_RRDB_models.py
 <p align="justify"><code>converter_RRDB_models.py</code> is the converter and <code>RRDBNet_arch.py</code> contains the classes
 which are required to run the converter. The latter file is imported from the converter.</p>
 
-Run the converter as follows:
+<p align="justify">Run the converter as follows:</p>
 
 ```
 python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 ```
 
-<p align="justify"></p>
+</p>
+
+## To-Do
+
+Check under which conditions the converter is working or not.
 
 ## Reference
 
