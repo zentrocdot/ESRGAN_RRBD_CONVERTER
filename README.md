@@ -36,11 +36,11 @@ which are required to run the converter. The latter file is imported from the co
 python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 ```
 
-</p>
+
 
 ## To-Do
 
-Check under which conditions the converter is working or not. Catch errors while executing. Improvement of comments in the script.
+<p align="justify">Check under which conditions the converter is working or not. Catch errors while executing. Improvement of comments in the script. Add a list which models could be converted so far.</p>
 
 ## Reference
 
