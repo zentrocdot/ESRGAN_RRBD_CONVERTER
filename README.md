@@ -36,7 +36,11 @@ which are required to run the converter. The latter file is imported from the co
 python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 ```
 
-
+## Tested Models
+ 
++ 4x_foolhardy_Remacri.pth
++ 4xPSNR.pth
++ RRDB_ESRGAN_x4.pth
 
 ## To-Do
 
