@@ -43,6 +43,10 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 + RRDB_ESRGAN_x4.pth
 + 4x-UltraSharp.pth
 
+## ESRGAN and AUTOMATIC1111
+
+
+
 ## To-Do
 
 <p align="justify">Check under which conditions the converter is working or not. Catch errors while executing. Improvement of comments in the script. Add a list which models could be converted so far.</p>
@@ -56,4 +60,6 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 [3] https://huggingface.co/
 
 [4] https://openmodeldb.info/
+
+[5] https://github.com/cszn/KAIR/releases/download/v1.0/ESRGAN.pth
 
