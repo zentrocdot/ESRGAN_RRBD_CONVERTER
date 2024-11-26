@@ -40,7 +40,7 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 
 ## To-Do
 
-Check under which conditions the converter is working or not.
+Check under which conditions the converter is working or not. Catch errors while executing. Improvement of comments in the script.
 
 ## Reference
 
