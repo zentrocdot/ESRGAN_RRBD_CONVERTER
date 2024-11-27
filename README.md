@@ -2,21 +2,22 @@
 
 ## Preface
 
-<p align="justify">While I was working on the upscaling method for
-images using ESRGAN models, the question arose as to how I could
-utilise all available ESRGAN models with the approach I am working
+<p align="justify">While I was working on implementing an upscaling
+method for images using ESRGAN models, the question arose as to how
+I can use all available ESRGAN models with the approach I am working
 with.</p>
 
-<p align="justify">If you use ESRGAN models from external sources,
-you will get sometimes RRBD error messages indicating a tensor
+<p align="justify">If one uses ESRGAN models from external sources,
+one will get sometimes RRBD error messages indicating a tensor
 formatting problem.</p>
 
 <p align="justify">A simple converter can be found in the original 
-ESRGAN sources. I have adapted this converter for my personal 
-purposes.</p>
+ESRGAN sources I intended to use. I have adapted this converter for
+my personal purposes.</p>
 
-<p align="justify">Now upscalers that I can use with <i>AUTOMATIC1111</i>
-can be used. I can now also use upscalers from other sources.</p>
+<p align="justify">Now some upscalers that I am using with
+<i>AUTOMATIC1111</i> I can also use in my upscaler application.
+I can now also use upscalers from other sources.</p>
 
 ## Motivation
 
