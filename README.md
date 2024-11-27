@@ -59,7 +59,7 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 
 ## Error handling
 
-<p align="justify">Errors are ctched and the Tracback is printed out into the Terminal window. This looks like:
+<p align="justify">Errors are catched and the Tracback is printed out into the Terminal window. This looks like:
 </p>
 
 ```
