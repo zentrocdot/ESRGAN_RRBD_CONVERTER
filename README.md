@@ -38,7 +38,7 @@ with xinntaos approach.</p>
 
 ## How to Use the Converter
 
-<p align="justify">You need following two files from the <pre>scripts</pre>
+<p align="justify">You need following two files from the <code>scripts</code>
 folder.</p>
 
 ```
