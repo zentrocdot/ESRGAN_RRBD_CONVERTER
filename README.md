@@ -1,4 +1,4 @@
-# ESRN RRBG CONVERTER
+# ESRN RRBG CONVERTER [![GitHub - ESRGAN](https://img.shields.io/badge/GitHub-ESRGAN-2ea44f)](https://github.com/xinntao/ESRGAN)
 
 ## Preface
 
