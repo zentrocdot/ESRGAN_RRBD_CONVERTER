@@ -11,8 +11,9 @@ with.</p>
 you will get sometimes RRBD error messages indicating a tensor
 formatting problem.</p>
 
-<p align="justify">A simple converter can be found in the ESRGAN
-sources. I have adapted this converter for my purposes.</p>
+<p align="justify">A simple converter can be found in the original 
+ESRGAN sources. I have adapted this converter for my personal 
+purposes.</p>
 
 <p align="justify">Now upscalers that I can use with <i>AUTOMATIC1111</i>
 can be used. I can now also use upscalers from other sources.</p>
@@ -54,6 +55,24 @@ which are required to run the converter. The latter file is imported from the co
 
 ```
 python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
+```
+
+## Error handling
+
+<p align="justify">Errors are ctched and the Tracback is printed out into the Terminal window. This looks like:
+</p>
+
+```
+Traceback (most recent call last):
+  File "/home/hades/ssd-sandisk/AI_Tools/ESRGAN/ESRGAN/models/experimentell_converter_RRDB_models.py", line 97, in main
+    crt_net[key] = pretrained_net[value]
+KeyError: 'model.8.weight'
+
+Traceback (most recent call last):
+  File "/home/hades/ssd-sandisk/AI_Tools/ESRGAN/ESRGAN/models/experimentell_converter_RRDB_models.py", line 97, in main
+    crt_net[key] = pretrained_net[value]
+KeyError: 'model.8.bias'
+
 ```
 
 ## Tested Models
