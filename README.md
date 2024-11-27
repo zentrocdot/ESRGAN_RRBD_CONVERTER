@@ -15,9 +15,27 @@ adapted this for my purposes.</p>
 <p align="justify">Now upscaler from AUTOMATIC1111 as well as other resources 
 available to me.</p>
 
+## Motivation
+
+<p align="justify">I implemneted ERSGAN [1] and RealESRGAN [2] in my
+<i>Lazy Image Upscaler</i>. To be able to test more than the given 4 
+models from xinntao I searched and collected other ERSGAN models and
+tried them out, most of the time with no success. The Model from 
+AUTOMATIC1111 [5] was also working. The usage of other models from other 
+sources failed.</p>
+
+<p align="justify">I started a mini project with the goal to provide
+other upscaler models for my <i>Lazy Image Upscaler</i>. With the here
+presented converter I have now access to more models.</p>
+
+<p align="justify">I will use the ERSGAN method in his given form from
+xinntao independend from other software tools. The only thing I need is
+a converter to prepare more or less the most ESRGAN models for use
+with xinntaos approach.</p>
+
 ## How to Use the Converter
 
-You need following two files from the scripts folder.
+<p align="justify">You need following two files from the scripts folder.</p>
 
 ```
 RRDBNet_arch.py
@@ -45,11 +63,18 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 
 ## ESRGAN and AUTOMATIC1111
 
-
+<p align="justify">AUTOMATIC is using the ESRGAN model which can be downloaded from [5].</p>
 
 ## To-Do
 
-<p align="justify">Check under which conditions the converter is working or not. Catch errors while executing. Improvement of comments in the script. Add a list which models could be converted so far.</p>
+<p align="justify">I have to check under which conditions the converter is working 
+and under which conditions the converter is not working.</p>
+ 
+<p align="justify">I have to catch errors while executing the script.
+In the experimental version I was able to realise this in a rudimentary way.</p>
+ 
+<p align="justify">I need an improvement of the comments in the script. And I am also need
+an improvement of this documentation.</p>
 
 ## Reference
 
@@ -62,4 +87,8 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 [4] https://openmodeldb.info/
 
 [5] https://github.com/cszn/KAIR/releases/download/v1.0/ESRGAN.pth
+
+[6] https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY
+
+[7] https://pan.baidu.com/s/1-Lh6ma-wXzfH8NqeBtPaFQ
 
