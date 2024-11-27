@@ -16,7 +16,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 import torch
 
 # Set the file.
-PT_FILE = "RRDB_8xPSNR.pth"
+PTH_FILE = "filename.pth"
 
 # Main script function.
 def main(filename):
@@ -31,4 +31,4 @@ def main(filename):
 # Execute as module as well as a program.
 if __name__ == "__main__":
     # Call main function.
-    main(PT_FILE)
+    main(PTH_FILE)
