@@ -58,12 +58,12 @@ script. The latter file is imported from the converter.</p>
 <p align="justify">Run the converter as follows:</p>
 
 ```
-python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
+python3 converter_RRDB_models.py upscaler_model_file_name.pth
 ```
 
-## Error handling
+## Error Handling
 
-<p align="justify">Errors are catched and the Tracback is printed out into the Terminal window. This looks like:
+<p align="justify">Errors are catched and the Tracback is printed out into the terminal window. This looks like:
 </p>
 
 ```
@@ -79,12 +79,19 @@ KeyError: 'model.8.bias'
 
 ```
 
+<p align="justify">Other errors need to be catched also.</p>
+
 ## Tested Models
+
+<p align="justify">ESRGAN models I have tested and successful converted:</p>
  
 + 4x_foolhardy_Remacri.pth
 + 4xPSNR.pth
-+ RRDB_ESRGAN_x4.pth
 + 4x-UltraSharp.pth
++ 4xLSDIRplus.pth
++ RRDB_ESRGAN_x4.pth
++ 4xPSNR.pth
++ 4x_Fatality_Comix_260000_G_rrdb.pth
 
 ## ESRGAN and AUTOMATIC1111
 
@@ -104,6 +111,18 @@ way.</p>
  
 <p align="justify">I need an improvement of the comments in the script.
 And I am also need an improvement of this documentation.</p>
+
+## Test Environment
+
+<p align="justify">I developed and tested the Python script with following specification:</p>
+
+* Linux Mint 21.3 (Virginia)
+* Python 3.10.14
+* OpenCV 4.10.0
+* PIL 11.0.0
+* Gradio 5.6.0
+* Torch 2.4.1+cu121
+* Numpy  2.1.3
 
 ## Reference
 
