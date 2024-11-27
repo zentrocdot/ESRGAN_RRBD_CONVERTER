@@ -12,8 +12,8 @@ receive RRBD error messages that indicate a formatting problem.</p>
 <p align="justify">A basic converter can be found in the ESRGAN sources. I have
 adapted this for my purposes.</p>
 
-<p align="justify">Now upscaler from AUTOMATIC1111 as well as other resources 
-available to me.</p>
+<p align="justify">Now upscaler which I can use with AUTOMATIC1111 can be used. 
+Upscaler from other resources as well are now available to me.</p>
 
 ## Motivation
 
