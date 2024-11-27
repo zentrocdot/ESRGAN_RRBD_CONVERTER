@@ -2,18 +2,20 @@
 
 ## Preface
 
-<p align="justify">While I was working on the upscaling method for images
-using ESRGAN models, the question arose as to how I could utilise all available
-ESRGAN models with the approach I am working with.</p>
+<p align="justify">While I was working on the upscaling method for
+images using ESRGAN models, the question arose as to how I could
+utilise all available ESRGAN models with the approach I am working
+with.</p>
 
-<p align="justify">If you use ESRGAN models from external sources, you will
-receive RRBD error messages that indicate a formatting problem.</p>
+<p align="justify">If you use ESRGAN models from external sources,
+you will get sometimes RRBD error messages indicating a tensor
+formatting problem.</p>
 
-<p align="justify">A basic converter can be found in the ESRGAN sources. I have
-adapted this for my purposes.</p>
+<p align="justify">A simple converter can be found in the ESRGAN
+sources. I have adapted this converter for my purposes.</p>
 
-<p align="justify">Now upscaler which I can use with AUTOMATIC1111 can be used. 
-Upscaler from other resources as well are now available to me.</p>
+<p align="justify">Now upscalers that I can use with <i>AUTOMATIC1111</i>
+can be used. I can now also use upscalers from other sources.</p>
 
 ## Motivation
 
@@ -67,14 +69,18 @@ python3 converter_RRDB_models.py 4x_Superscale-SP8000G.pth
 
 ## To-Do
 
-<p align="justify">I have to check under which conditions the converter is working 
-and under which conditions the converter is not working.</p>
+<p align="justify">I have to check under which conditions the converter
+is working and under which conditions the converter is not working.</p>
+
+<p align="justify">Analysis of the internal model structure to understand
+the formatting of different models related to RRDB models.</p>
  
 <p align="justify">I have to catch errors while executing the script.
-In the experimental version I was able to realise this in a rudimentary way.</p>
+In the experimental version I was able to realise this in a rudimentary
+way.</p>
  
-<p align="justify">I need an improvement of the comments in the script. And I am also need
-an improvement of this documentation.</p>
+<p align="justify">I need an improvement of the comments in the script.
+And I am also need an improvement of this documentation.</p>
 
 ## Reference
 
