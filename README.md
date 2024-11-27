@@ -132,17 +132,17 @@ as you might say: Every TRON counts! Many thanks in advance! :smiley:
 ```
 TQamF8Q3z63sVFWiXgn2pzpWyhkQJhRtW7
 ```
-<p align="left">${\textnormal{\color{navy}Doge}}$</p>
+> <p align="left">${\textnormal{\color{navy}Crypto Coin Dogecoin}}$</p>
 
 ```
 DQYkNGW8VfCuUbM9Womnp6KiFdtMa4NUkD
 ```
-<p align="left">${\textnormal{\color{navy}Bitcoin}}$</p>
+> <p align="left">${\textnormal{\color{navy}Crypto Coin Bitcoin}}$</p>
 
 ```
 12JsKesep3yuDpmrcXCxXu7EQJkRaAvsc5
 ```
-<p align="left">${\textnormal{\color{navy}Ethereum}}$</p>
+> <p align="left">${\textnormal{\color{navy}Crypto Coin Ethereum}}$</p>
 
 ```
 0x31042e2F3AE241093e0387b41C6910B11d94f7ec
