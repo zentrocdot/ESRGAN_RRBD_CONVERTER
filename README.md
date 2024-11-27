@@ -38,7 +38,8 @@ with xinntaos approach.</p>
 
 ## How to Use the Converter
 
-<p align="justify">You need following two files from the scripts folder.</p>
+<p align="justify">You need following two files from the <pre>scripts</pre>
+folder.</p>
 
 ```
 RRDBNet_arch.py
