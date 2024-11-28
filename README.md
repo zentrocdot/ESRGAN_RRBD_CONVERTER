@@ -170,4 +170,4 @@ DQYkNGW8VfCuUbM9Womnp6KiFdtMa4NUkD
 ```
 0x31042e2F3AE241093e0387b41C6910B11d94f7ec
 ```
-<p align="left">$${\textnormal{\color{darkpurple}Have a nice and successful day. And peace to everyone on earth.}}$$</p>
+<p align="left">$${\textnormal{\color{purple}Have a nice and successful day. And peace to everyone on earth.}}$$</p>
