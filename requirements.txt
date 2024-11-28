@@ -1,3 +1,5 @@
+# Apply this file using following command on the command line:
+# pip3 install -r requirements.txt
 torch
 pillow
 opencv-contrib-python
