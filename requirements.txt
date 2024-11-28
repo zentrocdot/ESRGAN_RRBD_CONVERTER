@@ -1,0 +1,3 @@
+torch
+pillow
+opencv-contrib-python
