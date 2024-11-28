@@ -147,7 +147,7 @@ or if it is useful, you are welcome to donate a small contribution. Or
 as you might say: Every TRON counts! Many thanks in advance! :smiley:
 </p>
 
-> <p align="left">${\textnormal{\color{navy}Crypto Coin Tron}}$</p>
+> #### <p align="left">Crypto Coin Tron</p>
 
 ```
 TQamF8Q3z63sVFWiXgn2pzpWyhkQJhRtW7
@@ -167,4 +167,4 @@ DQYkNGW8VfCuUbM9Womnp6KiFdtMa4NUkD
 ```
 0x31042e2F3AE241093e0387b41C6910B11d94f7ec
 ```
-
+<p align="left">${\textnormal{\color{navy}Many thanks in advance!}}$</p>
