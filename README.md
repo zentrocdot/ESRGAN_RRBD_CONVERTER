@@ -75,6 +75,14 @@ models for use with xinntaos approach.</p>
 > Keeping this in mind my interest is focussed on how to use a model and
 > not how to train a model.
 
+## Name of the Repository
+
+<p align="justify">ESRGAN is used together with RRDB. This is
+the base concept. I provide tools for the conversion between
+ESRGAN models and converter for this methodology. So after
+some back and forth the name was born. At the latest when
+I understood the connections better.</p>
+
 ## Technical Background
 
 ### Brief Introduction
@@ -126,15 +134,7 @@ or conversion table for the keys which looks like:</p>
 to consider while converting that given tensor shape is the
 tensor shape which is required by the final model.</p>
 
-## Name of the Repository
-
-<p align="justify">ESRGAN is used together with RRDB. This is
-the base concept. I provide tools for the conversion between
-ESRGAN models and converter for this methodology. So after
-some back and forth the name was born. At the latest when
-I understood the connections better.</p>
-
-## What is Implemented So Far
+## Description What Is Implemented So Far
 
 <p align="justify">I have converted the original supplied converter
 for old RSGAN to the new RSGAN for my personal purposes. Then I 
@@ -147,29 +147,6 @@ ERSGAN models and it is able to find out if a model is possibly
 RealsESRGAN. This is important driven by the fact that sometime 
 a model is wrong declared. Next I wrot a converter from RealESRGAN
 to ESRGAN. This converter works so far quite good.</p>
-
-
-## Error Handling
-
-<p align="justify">Errors are catched and the <i>Traceback</i>
-is printed out into the terminal window. This looks like:</p>
-
-```
-Traceback (most recent call last):
-  File "/home/hades/ssd-sandisk/AI_Tools/ESRGAN/ESRGAN/models/experimentell_converter_RRDB_models.py", line 97, in main
-    crt_net[key] = pretrained_net[value]
-KeyError: 'model.8.weight'
-
-Traceback (most recent call last):
-  File "/home/hades/ssd-sandisk/AI_Tools/ESRGAN/ESRGAN/models/experimentell_converter_RRDB_models.py", line 97, in main
-    crt_net[key] = pretrained_net[value]
-KeyError: 'model.8.bias'
-
-```
-
-<p align="justify">This is no longer an error. This behaviour
-is considered in the last version of the converter. But other
-errors need to be catched.</p>
 
 ## Conversion Process
 
@@ -295,6 +272,27 @@ converter script. The latter file is imported from the converter.
 ```
 python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 ```
+## Error Handling
+
+<p align="justify">Errors are catched and the <i>Traceback</i>
+is printed out into the terminal window. This looks like:</p>
+
+```
+Traceback (most recent call last):
+  File "/home/hades/ssd-sandisk/AI_Tools/ESRGAN/ESRGAN/models/experimentell_converter_RRDB_models.py", line 97, in main
+    crt_net[key] = pretrained_net[value]
+KeyError: 'model.8.weight'
+
+Traceback (most recent call last):
+  File "/home/hades/ssd-sandisk/AI_Tools/ESRGAN/ESRGAN/models/experimentell_converter_RRDB_models.py", line 97, in main
+    crt_net[key] = pretrained_net[value]
+KeyError: 'model.8.bias'
+
+```
+
+<p align="justify">This is no longer an error. This behaviour
+is considered in the last version of the converter. But other
+errors need to be catched.</p>
 
 ## To-Do
 
