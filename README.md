@@ -7,7 +7,7 @@ a much 😏.</p></b>
 
 ## SHORT DESCRIPTION
 
-#### of Repository Content 
+#### Repository Content 
 
 > <p align="justify">Resources for converting of models from old ESRGAN
 > to new ESRGAN architecture. Resources for converting RealESRGAN models
