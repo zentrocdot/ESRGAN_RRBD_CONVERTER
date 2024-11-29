@@ -56,8 +56,11 @@ his given form from xinntao independend from other software tools. The
 only thing I need is a converter to prepare more or less the most ESRGAN
 models for use with xinntaos approach.</p>
 
-> [!Note]
-> 
+> [!NOTE]  
+> I am interested in the generative AI image creation. Of course, I am
+> also interested in theory when necessary, but only when it is helpful.
+> Keeping this in mind my interest is focussed on how to use a model and
+> not how to train a model.
 
 ## Technical Background
 
