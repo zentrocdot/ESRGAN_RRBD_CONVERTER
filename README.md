@@ -274,17 +274,19 @@ which can be downloaded from [5].</p>
 
 ## Example
 
-I used the following AI created image to show how the conversion works. The original image
-has a resolution of 512 x 512 pixel.
+I used the following AI created image to show how the conversion from one model 
+to another model works. The original jpg image has a resolution of 512 x 512 pixel.
 
 <a target="_blank" href=""><img src="./images/shedevil.jpg" alt="button panel"></a>
 
-The ESRGAN model from xinntao is used unchanged. The comparable model from RealSRGAn is
-converted to ESRGAN and used for the image creation.
+I used the old ESRGAN model <code>RRDB_PSNR_x4_old_arch.pth</code> from xinntao and
+converted this model to a new ESRGAN model. I used the RealESRGAN model <code>RRDB_RealESRGAN_x4plus.pth</code>
+from xinntao and converted this model to a new ESRGAN model.
 
-On can see, what the theory to the approaches states. Ther are upscaling artifact in the 
-ESRGAn created image and no longer upscaling artifacts in the RealSRGAn created image.
-I zoomed in the face of the girl in the created images to show the effects. 
+One can see is the following collage, what the theory to the both approaches states.
+There are upscaling artifact in the ESRGAN created image and no longer upscaling
+artifacts in the RealSRGAN created image. I zoomed in the face of the girl in the
+created images to show the effects. 
 
 <a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
 
