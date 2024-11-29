@@ -6,9 +6,9 @@
 
 > <p align="justify">Resources for converting of models from old ESRGAN
 > to new ESRGAN architecture. Resources for converting RealESRGAN models
-> to a new ESRGAN model.</p>
+> to new ESRGAN models.</p>
 
-<b><p align="justify">💰 If you like what I present here, or if it 
+<b><p align="justify">If you like what I present here, or if it 
 helps you, or if it is useful, you are welcome to [donate](#Donation)
 a small contribution. It motivates me a lot and speeds up my work
 a much 😏.</p></b>
@@ -243,7 +243,8 @@ The algorithm seems to work well so far.</p>
   
 ## Compatible NEW (current) ESRGAN Models
 
-<p align="justify">Some were analysed and found to be new models:</p>
+<p align="justify">Some were analysed and found to be
+new models:</p>
 
 * RRDB_ESRGAN_x4.pth (xinntao)
 * RRDB_PSNR_x4.pth (xinntao)
@@ -305,6 +306,12 @@ the following software development environment:</p>
 * PIL 11.0.0
 * Numpy  2.1.3
 * Torch 2.4.1+cu121
+  
+## To-DO
+
+<p align="justify">As soon as I have time, I will programme two slim upscalers
+for ESRGAN and RealESRGAN. Then the original or converted models can be tested
+directly.</p>
 
 ## Licenses
 
