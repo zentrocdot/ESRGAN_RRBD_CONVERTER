@@ -134,7 +134,7 @@ or conversion table for the keys which looks like:</p>
 to consider while converting that given tensor shape is the
 tensor shape which is required by the final model.</p>
 
-## Description What Is Implemented So Far
+## Description of What Is Implemented So Far
 
 <p align="justify">I have converted the original supplied converter
 for old RSGAN to the new RSGAN for my personal purposes. Then I 
@@ -147,93 +147,6 @@ ERSGAN models and it is able to find out if a model is possibly
 RealsESRGAN. This is important driven by the fact that sometime 
 a model is wrong declared. Next I wrot a converter from RealESRGAN
 to ESRGAN. This converter works so far quite good.</p>
-
-## Conversion Process
-
-<p align="justify">if you run the experimental converter.</p>
-
-```
-lucifer@hades:~/ESRGAN/models$ python3 experimentell_converter_RRDB_models.py 8x_NMKD-Superscale_150000_G.pth
-```
-
-<p align="justify">the output in the terminal window is as follows:</p>
-
-```
-***  ESRGAN CONVERTER  ***
-Reference keywords to found keywords:
-['model.8.weight', 'model.8.bias', 'model.10.weight', 'model.10.bias']
-['model.11.weight', 'model.11.bias', 'model.13.weight', 'model.13.bias']
-Input: 8x_NMKD-Superscale_150000_G.pth
-Output: 8x_NMKD-Superscale_150000_G_CED.pth
-Start conversion ...
-... conversion completed!
-```
-
-<p align="justify">Reference keywords versus found keywords show, if there was a mismatch.</p>
-
-## Tested Models
-
-<p align="justify">Subsequently listed ESRGAN models next others I have tested and successful converted:</p>
- 
-+ 4xLSDIRplus.pth
-+ 4x_foolhardy_Remacri.pth
-+ 4x_FuzzyBox.pth
-+ 4x-UltraSharp.pth
-+ 4x_NMKD-Siax_175k.pth
-+ 4x_NMKD-Siax_200k.pt
-+ 4x-UniScale_Restore.pth
-+ 4x-UniScaleV2_Sharp.pth
-+ 4x_UniversalUpscalerV2-Sharp_101000_G.pth
-+ 4x_Fatality_Comix_260000_G.pth
-+ realesrgan-x4minus.pth
-+ 4xPSNR.pth
-+ 8xPSNR.pth
-+ 8x_NMKD-Superscale_150000_G.pth (color shift after conversion?)
-+ RRDB_PSNR_x4_old_arch.pth (xinntao)
-+ RRDB_ESRGAN_x4_old_arch.pth (xinntao)
-
-<p align="justify">The list is not complete, but shows
-that almost every old model can already be converted. 
-The algorithm seems to work well so far.</p>
-  
-## Compatible NEW (current) ESRGAN Models
-
-<p align="justify">Some were analysed and found to be
-new models:</p>
-
-* RRDB_ESRGAN_x4.pth (xinntao)
-* RRDB_PSNR_x4.pth (xinntao)
-* ESRGAN.pth (KAIR)
-* DF2K.pth
-
-## Pickle Tensor
-
-<p align="justify">Files in the Pickle Tensor fileformat have
-in case of the ESRGAN models the extension <code>.pth</code>.
-Binary as well as zip-files can be used. There is no need for
-a further distinction or conversion.</p>
- 
-## Repository & Directory Structure
-
-<p align="justify">The repository and directory structure of
-the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p> 
-
-```bash
-    └── esrgan_rrbd_converter
-        ├── original
-        ├── scripts
-        └── tools
-```
-
-<p align="justify">The folder <code>original</code> contains the original 
-sources from xinntao [1]. In the folder <code>tools</code> there are tools 
-like the one for analysing the model structure. The folder <code>scripts
-</code> contains the current converter.</p> 
-
-## ESRGAN and AUTOMATIC1111
-
-<p align="justify">AUTOMATIC is using the ESRGAN model
-which can be downloaded from [5].</p>
 
 ## Easy Way to Test the Converter
 
@@ -272,6 +185,28 @@ converter script. The latter file is imported from the converter.
 ```
 python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 ```
+
+## Conversion Process
+
+<p align="justify">if you run the experimental converter.</p>
+
+```
+lucifer@hades:~/ESRGAN/models$ python3 experimentell_converter_RRDB_models.py 8x_NMKD-Superscale_150000_G.pth
+```
+
+<p align="justify">the output in the terminal window is as follows:</p>
+
+```
+***  ESRGAN CONVERTER  ***
+Reference keywords to found keywords:
+['model.8.weight', 'model.8.bias', 'model.10.weight', 'model.10.bias']
+['model.11.weight', 'model.11.bias', 'model.13.weight', 'model.13.bias']
+Input: 8x_NMKD-Superscale_150000_G.pth
+Output: 8x_NMKD-Superscale_150000_G_CED.pth
+Start conversion ...
+... conversion completed!
+```
+
 ## Error Handling
 
 <p align="justify">Errors are catched and the <i>Traceback</i>
@@ -293,6 +228,73 @@ KeyError: 'model.8.bias'
 <p align="justify">This is no longer an error. This behaviour
 is considered in the last version of the converter. But other
 errors need to be catched.</p>
+
+<p align="justify">Reference keywords versus found keywords show,
+if there was a mismatch.</p>
+
+## Compatible NEW (current) ESRGAN Models
+
+<p align="justify">Some were analysed and found to be
+new models. No need for a conversion:</p>
+
+* RRDB_ESRGAN_x4.pth (xinntao)
+* RRDB_PSNR_x4.pth (xinntao)
+* ESRGAN.pth (KAIR)
+* DF2K.pth
+
+## Tested Models
+
+<p align="justify">Subsequently listed ESRGAN models next others I have tested and successful converted:</p>
+ 
++ 4xLSDIRplus.pth
++ 4x_foolhardy_Remacri.pth
++ 4x_FuzzyBox.pth
++ 4x-UltraSharp.pth
++ 4x_NMKD-Siax_175k.pth
++ 4x_NMKD-Siax_200k.pt
++ 4x-UniScale_Restore.pth
++ 4x-UniScaleV2_Sharp.pth
++ 4x_UniversalUpscalerV2-Sharp_101000_G.pth
++ 4x_Fatality_Comix_260000_G.pth
++ realesrgan-x4minus.pth
++ 4xPSNR.pth
++ 8xPSNR.pth
++ 8x_NMKD-Superscale_150000_G.pth (color shift after conversion?)
++ RRDB_PSNR_x4_old_arch.pth (xinntao)
++ RRDB_ESRGAN_x4_old_arch.pth (xinntao)
+
+<p align="justify">The list is not complete, but shows
+that almost every old model can already be converted. 
+The algorithm seems to work well so far.</p>
+
+## ESRGAN and AUTOMATIC1111
+
+<p align="justify">AUTOMATIC is using the ESRGAN model
+which can be downloaded from [5].</p>
+  
+## Pickle Tensor
+
+<p align="justify">Files in the Pickle Tensor fileformat have
+in case of the ESRGAN models the extension <code>.pth</code>.
+Binary as well as zip-files can be used. There is no need for
+a further distinction or conversion.</p>
+ 
+## Repository & Directory Structure
+
+<p align="justify">The repository and directory structure of
+the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p> 
+
+```bash
+    └── esrgan_rrbd_converter
+        ├── original
+        ├── scripts
+        └── tools
+```
+
+<p align="justify">The folder <code>original</code> contains the original 
+sources from xinntao [1]. In the folder <code>tools</code> there are tools 
+like the one for analysing the model structure. The folder <code>scripts
+</code> contains the current converter.</p> 
 
 ## To-Do
 
