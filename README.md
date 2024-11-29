@@ -251,7 +251,8 @@ by this license. I always publish my work under the MIT license.</p>
 
 ## Credits
 
-<p align="justify">.</p> 
+<p align="justify">My thanks go to the excellent work of Xintao Wang (xinntao). 
+The results that can be achieved with his approach are more than good.</p> 
 
 ## Reference
 
