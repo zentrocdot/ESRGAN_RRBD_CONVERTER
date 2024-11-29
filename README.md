@@ -226,6 +226,8 @@ Start conversion ...
 + 4xPSNR.pth
 + 8xPSNR.pth
 + 8x_NMKD-Superscale_150000_G.pth (color shift after conversion?)
++ RRDB_PSNR_x4_old_arch.pth (xinntao)
++ RRDB_ESRGAN_x4_old_arch.pth (xinntao)
 
 <p align="justify">The list is not complete, but shows
 that almost every old model can already be converted. 
@@ -239,6 +241,13 @@ The algorithm seems to work well so far.</p>
 * RRDB_PSNR_x4.pth (xinntao)
 * ESRGAN.pth (KAIR)
 * DF2K.pth
+
+## Pickle Tensor
+
+<p align="justify">Files in the Pickle Tensor fileformat have
+in case of the ESRGAN models the extension <code>.pth</code>.
+Binary as well as zip-files can be used. There is no need for
+a further distinction or conversion.</p>
  
 ## Repository & Directory Structure
 
