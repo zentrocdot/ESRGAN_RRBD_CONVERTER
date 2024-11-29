@@ -48,7 +48,7 @@ from different other sources.</p>
 my <i>Lazy Image Upscaler</i>. To be able to test more than the given
 four models from xinntao I searched and collected other ERSGAN models
 and tried them out, most of the time without success. One model in use
-by the web user interface <i>AUTOMATIC1111<i> [5] was also working. The
+by the web user interface <i>AUTOMATIC1111</i> [5] was also working. The
 usage of other models from other sources failed for the time being.</p>
 
 <p align="justify">I will use the ERSGAN method (and the RealERSGAN) in
