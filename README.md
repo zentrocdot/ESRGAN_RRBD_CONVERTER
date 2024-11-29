@@ -280,6 +280,15 @@ like the one for analysing the model structure. The folder <code>scripts
 <p align="justify">AUTOMATIC is using the ESRGAN model
 which can be downloaded from [5].</p>
 
+## Easy Way to Test the Converter
+
+Clone this github repository.
+
+```
+git clone https://github.com/xinntao/ESRGAN
+cd ESRGAN_RRDB_CONVERTER
+```
+
 ## To-Do
 
 <p align="justify">I have to check under which conditions the converter
