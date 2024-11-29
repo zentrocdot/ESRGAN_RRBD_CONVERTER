@@ -114,15 +114,21 @@ And I am also need an improvement of this documentation.</p>
 
 ## Test Environment
 
-<p align="justify">I developed and tested the Python script with following specification:</p>
+<p align="justify">I developed and tested the Python scripts using 
+the following software development environment:</p>
 
 * Linux Mint 21.3 (Virginia)
 * Python 3.10.14
 * OpenCV 4.10.0
 * PIL 11.0.0
-* Gradio 5.6.0
 * Torch 2.4.1+cu121
 * Numpy  2.1.3
+
+## Licenses
+
+<p align="justify">The algorithms with respect to ESRGAN of xinntao are published
+under theApache license. The original scripts and the improved scripts are covered
+by this license. I always publish my work under the MIT license.</p> 
 
 ## Reference
 
