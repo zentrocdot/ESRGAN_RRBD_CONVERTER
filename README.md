@@ -274,7 +274,17 @@ which can be downloaded from [5].</p>
 
 ## Example
 
+I used the following AI created image to show how the conversion works. The original image
+has a resolution of 512 x 512 pixel.
+
 <a target="_blank" href=""><img src="./images/shedevil.jpg" alt="button panel"></a>
+
+The ESRGAN model from xinntao is used unchanged. The comparable model from RealSRGAn is
+converted to ESRGAN and used for the image creation.
+
+On can see, what the theory to the approaches states. Ther are upscaling artifact in the 
+ESRGAn created image and no longer upscaling artifacts in the RealSRGAn created image.
+I zoomed in the face of the girl in the created images to show the effects. 
 
 <a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
 
