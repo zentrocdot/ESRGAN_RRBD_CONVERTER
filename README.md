@@ -38,7 +38,7 @@ ESRGAN sources I intended to use. That this is a converter was not
 obvious.I have adapted this converter for my personal purposes.</p>
 
 <p align="justify">Now some upscalers that I am already using with
-the web user interface <i>AUTOMATIC1111<i> I can also use in my
+the web user interface <i>AUTOMATIC1111</i> I can also use in my
 own upscaler application or standalone. I can now also use upscalers
 from different other sources.</p>
 
