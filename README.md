@@ -2,40 +2,87 @@
 
 ## Preface
 
+<p align="justify">A small idea has now turned into a small project.
+To make myself independent of the web user interfaces for the AI image
+generation, which are offering a high sophisticated upscaling capability,
+I implement different approaches for upscaling for myself.</p>
+
+<p align="justify">I worked in parallel with ESRGAN and RealESRGAN.
+Both approaches delivered quite impressive results from a standing start. 
+However, the number of functioning models is limited for the time being. 
+This is where the converters come into play, with which the number of
+models can potentially be increased. 
+</p>
+
+<p align="justify">At short notice and on a whim, I took a closer and
+more intensive look at the topic. The interim result of my deliberations
+can be found here in the repository. However, only some of the things
+I tried out and did can be found here.</p>
+
+<p align="justify">The quality of the results achieved in the meantime
+speaks for itself and justifies the use of ESRGAN and RealESRGAN.</p>
+
+## Motivation
+
 <p align="justify">While I was working on implementing an upscaling
 method for images using ESRGAN models, the question arose as to how
 I can use all available ESRGAN models with the approach I am working
 with.</p>
 
-<p align="justify">If one uses ESRGAN models from external sources,
-one will get sometimes RRBD error messages indicating a tensor
-formatting problem.</p>
+<p align="justify">If one uses ESRGAN models from external sources 
+and not the original proposed ESRGAN, one will get sometimes errors
+which results in a failure of the upscaling process.</p>
 
-<p align="justify">A simple converter can be found in the original 
-ESRGAN sources I intended to use. I have adapted this converter for
-my personal purposes.</p>
+<p align="justify">A simple converter could be found in the original 
+ESRGAN sources I intended to use. That this is a converter was not
+obvious.I have adapted this converter for my personal purposes.</p>
 
-<p align="justify">Now some upscalers that I am using with
-<i>AUTOMATIC1111</i> I can also use in my upscaler application.
-I can now also use upscalers from other sources.</p>
+<p align="justify">Now some upscalers that I am already using with
+the web user interface <i>AUTOMATIC1111<i> I can also use in my
+own upscaler application or standalone. I can now also use upscalers
+from different other sources.</p>
 
-## Motivation
+## Introduction
 
-<p align="justify">I implemneted ERSGAN [1] and RealESRGAN [2] in my
-<i>Lazy Image Upscaler</i>. To be able to test more than the given 4 
-models from xinntao I searched and collected other ERSGAN models and
-tried them out, most of the time with no success. The Model from 
-AUTOMATIC1111 [5] was also working. The usage of other models from other 
-sources failed.</p>
+<p align="justify">I implemneted ERSGAN [1] and RealESRGAN [2] in
+my <i>Lazy Image Upscaler</i>. To be able to test more than the given
+four models from xinntao I searched and collected other ERSGAN models
+and tried them out, most of the time without success. One model in use
+by the web user interface <i>AUTOMATIC1111<i> [5] was also working. The
+usage of other models from other sources failed for the time being.</p>
 
-<p align="justify">I started a mini project with the goal to provide
-other upscaler models for my <i>Lazy Image Upscaler</i>. With the here
-presented converter I have now access to more models.</p>
+<p align="justify">I will use the ERSGAN method (and the RealERSGAN) in
+his given form from xinntao independend from other software tools. The 
+only thing I need is a converter to prepare more or less the most ESRGAN
+models for use with xinntaos approach.</p>
 
-<p align="justify">I will use the ERSGAN method in his given form from
-xinntao independend from other software tools. The only thing I need is
-a converter to prepare more or less the most ESRGAN models for use
-with xinntaos approach.</p>
+> [!Note]
+> 
+
+## Technical Background
+
+### Brief Introduction
+
+<p align="justify">The ESRGAN (Enhanced Super-Resolution Generative
+Adversarial Networks) is improving the model architecture using the
+RRDB (Residual-in-residual Dense Block) without batch normalization
+based on the observations of EDSR. ESRGAN uses RaGAN (Relativistic
+GAN) relative loss instead of the perceptual loss and adversarial
+loss. It also improves the perceptual loss with VGG loss used in
+SRGAN. ESRGAN and RealESRGAn are direct improvments of SRGAN. The
+influence of EDSR should also be noted. A good article to the topic
+is [8].</p>
+
+
+<p align="justify">Within this repository I am focussing on ESRGAN
+and RealSRGAN. When we are talking about the implmentation of what 
+the last sections explains, we have to discuss the internal structure 
+of given ESRGAN model.</p>
+
+## What is Implemented So Far
+
+<p align="justify">I modified the shipped with converter for old 
+RSGAN to new RSGAN for my persnal purposes..</p>
 
 ## How to Use the Converter
 
@@ -145,6 +192,8 @@ by this license. I always publish my work under the MIT license.</p>
 [6] https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY
 
 [7] https://pan.baidu.com/s/1-Lh6ma-wXzfH8NqeBtPaFQ
+
+[8] https://ar5iv.labs.arxiv.org/html/1809.00219
 
 ## Donation
 
