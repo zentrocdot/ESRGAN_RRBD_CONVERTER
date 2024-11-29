@@ -43,6 +43,8 @@ def clear_term() -> None:
 # Main script function.
 def main(filename):
     '''Main script function'''
+    # Initialise variable key_var.
+    key_var = None
     # Set some key strings.
     error_str = "\n\33[41mERROR: Check the data structure!\33[49m"
     warn_str_0 = "\n\33[46mFound UNKNOWN (OLD) ESRGAN RRBD model. Check the data!\33[49m"
@@ -64,7 +66,10 @@ def main(filename):
             # print key and shape.
             print(key, dim)
         except:
-            pass
+            key_var = key
+    if key_var == "params_ema" or key_var == "params":
+        print("\33[45mTake a look at the data structure. Maybe it is a RealESRGAN model!\33[49m")
+        return None
     # Perform some sipmple checks.
     weight_shape_ref = [64, 3, 3, 3]
     bias_shape_ref = [64]
