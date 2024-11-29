@@ -221,10 +221,10 @@ Start conversion ...
 + 4x-UniScale_Restore.pth
 + 4x-UniScaleV2_Sharp.pth
 + 4x_UniversalUpscalerV2-Sharp_101000_G.pth
++ 4x_Fatality_Comix_260000_G.pth
 + realesrgan-x4minus.pth
 + 4xPSNR.pth
 + 8xPSNR.pth
-+ 4x_Fatality_Comix_260000_G.pth
 + 8x_NMKD-Superscale_150000_G.pth (color shift after conversion?)
 
 <p align="justify">The list is not complete, but shows
