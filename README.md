@@ -311,6 +311,10 @@ way.</p>
 <p align="justify">I need an improvement of the comments in the script.
 And I am also need an improvement of this documentation.</p>
 
+<p align="justify">As soon as I have time, I will programme two slim upscalers
+for ESRGAN and RealESRGAN. Then the original or converted models can be tested
+directly.</p>
+
 ## Test Environment
 
 <p align="justify">I developed and tested the Python scripts using 
@@ -323,12 +327,6 @@ the following software development environment:</p>
 * Numpy  2.1.3
 * Torch 2.4.1+cu121
   
-## To-DO
-
-<p align="justify">As soon as I have time, I will programme two slim upscalers
-for ESRGAN and RealESRGAN. Then the original or converted models can be tested
-directly.</p>
-
 ## Licenses
 
 <p align="justify">The algorithms with respect to ESRGAN of xinntao are published
