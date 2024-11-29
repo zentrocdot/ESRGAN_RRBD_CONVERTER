@@ -271,7 +271,13 @@ The algorithm seems to work well so far.</p>
 
 <p align="justify">AUTOMATIC is using the ESRGAN model
 which can be downloaded from [5].</p>
-  
+
+## Example
+
+<a target="_blank" href=""><img src="./images/shedevil.jpg" alt="button panel"></a>
+
+<a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
+
 ## Pickle Tensor
 
 <p align="justify">Files in the Pickle Tensor fileformat have
