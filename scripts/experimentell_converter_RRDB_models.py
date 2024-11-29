@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+'''Experimental ESRGAN converter.'''
+# pylint: disable=invalid-name
+# pylint: disable=unneeded-not
+# pylint: disable=unused-variable
+# pylint: disable=broad-except
+# pylint: disable=redefined-outer-name
 #
-# Version 0.0.0.1
+# Version 0.0.0.2
 #
 # (C) 2024 zentrocdot
 #
@@ -36,7 +42,9 @@
 # Import the standard Python modules.
 import os
 import sys
+import warnings
 import traceback
+from collections import OrderedDict
 
 # Import the third party Python module.
 import torch
@@ -45,7 +53,6 @@ import torch
 import RRDBNet_arch as arch
 
 # Supress the future warnings.
-import warnings
 warnings.filterwarnings('ignore', category=FutureWarning)
 
 # Get the model name from the command line.
@@ -58,16 +65,20 @@ basename = fn_list[0]
 extension = fn_list[1]
 
 # Create the save name.
-save_name = "RRDB_" + basename + extension
+save_name = basename + "_CVTD" + extension
+
+# Print header to screen.
+print("***  ESRGAN CONVERTER  ***")
 
 # Prepare model data.
 model_content = torch.load(file_name)
+
 # If some keywords not in the model content it must be a new model.
 weight_str = 'model.0.weight'
 bias_str = 'model.0.bias'
 # Check the keywords in the model content.
 if not (weight_str and bias_str) in model_content:
-    print("Nothing to do! Is yet a NEW ESRGAN model. Bye!")
+    print("Nothing to do! Is a NEW ESRGAN, a RealESRGAN or an unknown model. Bye!")
     os._exit(127)
 
 # Loop over the keys in model content.
@@ -84,6 +95,11 @@ print("Reference keywords to found keywords:")
 print(ref_list)
 print(conv_list)
 # Create the conversion table dict.
+# Variable parametrised:
+#   "HRconv.weight": "model.8.weight",
+#   "HRconv.bias": "model.8.bias",
+#   "conv_last.weight": "model.10.weight",
+#   "conv_last.bias": "model.10.bias"
 CRT_DICT = {
             "conv_first.weight": "model.0.weight",
             "conv_first.bias": "model.0.bias",
@@ -93,10 +109,6 @@ CRT_DICT = {
             "upconv1.bias": "model.3.bias",
             "upconv2.weight": "model.6.weight",
             "upconv2.bias": "model.6.bias",
-            #"HRconv.weight": "model.8.weight",
-            #"HRconv.bias": "model.8.bias",
-            #"conv_last.weight": "model.10.weight",
-            #"conv_last.bias": "model.10.bias"
             "HRconv.weight": conv_list[0],
             "HRconv.bias": conv_list[1],
             "conv_last.weight": conv_list[2],
@@ -106,7 +118,8 @@ CRT_DICT = {
 # ++++++++++++++++++++
 # Main script function
 # ++++++++++++++++++++
-def main(file_name, save_name, pretrained_net):
+#def main(file_name: str, save_name: str, pretrained_net: collections.OrderedDict) -> None:
+def main(file_name: str, save_name: str, pretrained_net: OrderedDict) -> None:
     '''Main script function.'''
     # Print input and output name.
     print("Input:", file_name)
@@ -135,18 +148,19 @@ def main(file_name, save_name, pretrained_net):
         if k in pretrained_net and pretrained_net[k].size() == v.size():
             crt_net[k] = pretrained_net[k]
             tbd.remove(k)
-    # Set first conv layer key/values.
-    #crt_net['conv_first.weight'] = pretrained_net['model.0.weight']
-    #crt_net['conv_first.bias'] = pretrained_net['model.0.bias']
     # Loop over the copied tbd list.
     for k in tbd.copy():
-        if 'RDB' in k:
+        pattern = 'RDB'
+        if pattern in k:
             ori_k = k.replace('RRDB_trunk.', 'model.1.sub.')
             if '.weight' in k:
                 ori_k = ori_k.replace('.weight', '.0.weight')
             elif '.bias' in k:
                 ori_k = ori_k.replace('.bias', '.0.bias')
-            crt_net[k] = pretrained_net[ori_k]
+            try:
+                crt_net[k] = pretrained_net[ori_k]
+            except:
+                pass
             tbd.remove(k)
     # Loop over key/value pairs.
     for key, value in CRT_DICT.items():
@@ -155,10 +169,18 @@ def main(file_name, save_name, pretrained_net):
         except Exception as err:
             #print("ERROR:", err)
             print(traceback.format_exc())
-    # Save new model.
-    torch.save(crt_net, save_name)
-    # print message.
+    # Try to save new model.
+    try:
+        torch.save(crt_net, save_name)
+    except RuntimeError as err:
+        #print("Error:", err)
+        #print(traceback.format_exc())
+        print("Could not finish saving the converted model. Bye!")
+        return None
+    # Print message.
     print("... conversion completed!")
+    # Return None.
+    return None
 
 # Execute the script as module or as programme.
 if __name__ == "__main__":
