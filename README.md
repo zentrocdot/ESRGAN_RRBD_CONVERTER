@@ -110,6 +110,14 @@ or conversion table for the keys which looks like:</p>
 to consider while converting that given tensor shape is the
 tensor shape which is required by the final model.</p>
 
+## Name of the Repository
+
+<p align="justify">ESRGAN is used together with RRDB. This is
+the base concept. I provide tools for the conversion between
+ESRGAN models and converter for this methodology. So after
+some back and forth the name was born. At the latest when
+I understood the connections better.</p>
+
 ## What is Implemented So Far
 
 <p align="justify">I have converted the original supplied converter
@@ -171,7 +179,7 @@ KeyError: 'model.8.bias'
 
 ## Tested Models
 
-<p align="justify">ESRGAN models I have tested and successful converted:</p>
+<p align="justify">This ESRGAN models next others I have tested and successful converted:</p>
  
 + 4x_foolhardy_Remacri.pth
 + 4xPSNR.pth
@@ -181,9 +189,27 @@ KeyError: 'model.8.bias'
 + 4xPSNR.pth
 + 4x_Fatality_Comix_260000_G_rrdb.pth
 
+## Repository & Directory Structure
+
+<p align="justify">The repository and directory structure of
+the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p> 
+
+```bash
+    └── esrgan_rrbd_converter
+        ├── original
+        ├── scripts
+        └── tools
+```
+
+<p align="justify">The folder <code>original</code> contains the original 
+sources from xinntao [1]. In the folder <code>tools</code> there are tools 
+like the one for analysing the model structure. The folder <code>scripts
+</code> contains the current converter.</p> 
+
 ## ESRGAN and AUTOMATIC1111
 
-<p align="justify">AUTOMATIC is using the ESRGAN model which can be downloaded from [5].</p>
+<p align="justify">AUTOMATIC is using the ESRGAN model
+which can be downloaded from [5].</p>
 
 ## To-Do
 
