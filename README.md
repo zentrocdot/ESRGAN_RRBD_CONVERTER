@@ -5,7 +5,7 @@
 <p align="justify">A small idea has now turned into a small project.
 To make myself independent of the web user interfaces for the AI image
 generation, which are offering a high sophisticated upscaling capability,
-I implement different approaches for upscaling for myself.</p>
+I implement different approaches for the upscaling of images for myself.</p>
 
 <p align="justify">I worked in parallel with ESRGAN and RealESRGAN.
 Both approaches delivered quite impressive results from a standing start. 
