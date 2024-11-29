@@ -112,15 +112,22 @@ tensor shape which is required by the final model.</p>
 
 ## What is Implemented So Far
 
-
-
 <p align="justify">I have converted the original supplied converter
-for old RSGAN to the new RSGAN for my personal purposes.</p>
+for old RSGAN to the new RSGAN for my personal purposes. Then I 
+modernized the implementation a little bit. Next I figured out, that
+some models look like ESRGAN modesl, but that they are not the models 
+I can use or that they are no ESRGAN or somes´thing is strange with
+the models. To have an idea what a model does I wrote a simple 
+analysing tools. This tool identifies highly reliable old an new
+ERSGAN models and it is able to find out if a model is possibly
+RealsESRGAN. This is important driven by the fact that sometime 
+a model is wrong declared. Next I wrot a converter from RealESRGAN
+to ESRGAN. This converter works so far quite good.</p>
 
-## How to Use the Converter
+## How to Use the Main Converter
 
 <p align="justify">You need following two files from the <code>scripts</code>
-folder.</p>
+folder to get the converter run.</p>
 
 ```
 RRDBNet_arch.py
@@ -131,9 +138,10 @@ converter_RRDB_models.py
 ```
 
 <p align="justify"><code>converter_RRDB_models.py</code> is the
-converter script and <code>RRDBNet_arch.py</code> is the module
-which contains the classes which are required to run the converter
-script. The latter file is imported from the converter.</p>
+converter script and <code>RRDBNet_arch.py</code> is the Python 
+module which contains the classes which are required to run the
+converter script. The latter file is imported from the converter.
+</p>
 
 <p align="justify">Run the converter as follows:</p>
 
@@ -201,14 +209,18 @@ the following software development environment:</p>
 * Python 3.10.14
 * OpenCV 4.10.0
 * PIL 11.0.0
-* Torch 2.4.1+cu121
 * Numpy  2.1.3
+* Torch 2.4.1+cu121
 
 ## Licenses
 
 <p align="justify">The algorithms with respect to ESRGAN of xinntao are published
 under theApache license. The original scripts and the improved scripts are covered
 by this license. I always publish my work under the MIT license.</p> 
+
+## Credits
+
+<p align="justify">.</p> 
 
 ## Reference
 
@@ -228,6 +240,7 @@ by this license. I always publish my work under the MIT license.</p>
 
 [8] https://ar5iv.labs.arxiv.org/html/1809.00219
 
+[9] https://openaccess.thecvf.com/content/ICCV2021W/AIM/papers/Wang_Real-ESRGAN_Training_Real-World_Blind_Super-Resolution_With_Pure_Synthetic_Data_ICCVW_2021_paper.pdf
 ## Donation
 
 <p align="justify">If you like what I present here, or if it helps you,
