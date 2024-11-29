@@ -104,6 +104,7 @@ or conversion table for the keys which looks like:</p>
     "model.8.bias"                       ->  "HRconv.bias" 
     "model.10.weight"                    ->  "conv_last.weight"
     "model.10.bias"                      ->  "conv_last.bias"
+```
 
 <p align="justify">The value to the key is a tensor. One has
 to consider while converting that given tensor shape is the
@@ -111,7 +112,7 @@ tensor shape which is required by the final model.</p>
 
 ## What is Implemented So Far
 
-```
+
 
 <p align="justify">I have converted the original supplied converter
 for old RSGAN to the new RSGAN for my personal purposes.</p>
