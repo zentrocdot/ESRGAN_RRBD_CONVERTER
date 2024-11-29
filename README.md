@@ -30,8 +30,8 @@ I can use all available ESRGAN models with the approach I am working
 with.</p>
 
 <p align="justify">If one uses ESRGAN models from external sources 
-and not the original proposed ESRGAN, one will get sometimes errors
-which results in a failure of the upscaling process.</p>
+and not the original proposed ESRGAN models, one will get sometimes 
+errors which results in a failure of the upscaling process.</p>
 
 <p align="justify">A simple converter could be found in the original 
 ESRGAN sources I intended to use. That this is a converter was not
