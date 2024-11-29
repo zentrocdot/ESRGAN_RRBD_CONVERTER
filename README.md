@@ -183,18 +183,61 @@ KeyError: 'model.8.bias'
 
 <p align="justify">Other errors need to be catched also.</p>
 
+## Conversion Process
+
+<p align="justify">if you run the experimental converter.</p>
+
+```
+lucifer@hades:~/ESRGAN/models$ python3 experimentell_converter_RRDB_models.py 8x_NMKD-Superscale_150000_G.pth
+```
+
+<p align="justify">the output in the terminal window is as follows:</p>
+
+```
+***  ESRGAN CONVERTER  ***
+Reference keywords to found keywords:
+['model.8.weight', 'model.8.bias', 'model.10.weight', 'model.10.bias']
+['model.11.weight', 'model.11.bias', 'model.13.weight', 'model.13.bias']
+Input: 8x_NMKD-Superscale_150000_G.pth
+Output: 8x_NMKD-Superscale_150000_G_CED.pth
+Start conversion ...
+... conversion completed!
+```
+
+<p align="justify">Reference keywords versus found keywords show, if there was a mismatch.</p>
+
 ## Tested Models
 
-<p align="justify">This ESRGAN models next others I have tested and successful converted:</p>
+<p align="justify">Subsequently listed ESRGAN models next others I have tested and successful converted:</p>
  
-+ 4x_foolhardy_Remacri.pth
-+ 4xPSNR.pth
-+ 4x-UltraSharp.pth
 + 4xLSDIRplus.pth
-+ RRDB_ESRGAN_x4.pth
++ 4x_foolhardy_Remacri.pth
++ 4x_FuzzyBox.pth
++ 4x-UltraSharp.pth
++ 4x_NMKD-Siax_175k.pth
++ 4x_NMKD-Siax_200k.pt
++ 4x-UniScale_Restore.pth
++ 4x-UniScaleV2_Sharp.pth
++ 4x_UniversalUpscalerV2-Sharp_101000_G.pth
++ realesrgan-x4minus.pth
 + 4xPSNR.pth
-+ 4x_Fatality_Comix_260000_G_rrdb.pth
++ 8xPSNR.pth
++ 4x_Fatality_Comix_260000_G.pth
++ 8x_NMKD-Superscale_150000_G.pth (color shift after conversion?)
 
+<p align="justify">The list is not complete, but shows
+that almost every old model can already be converted. 
+The algorithm seems to work well so far.</p>
+  
+## Compatible NEW (current) ESRGAN Models
+
+<p align="justify">Some were analysed and found to be new models:</p>
+
+* RRDB_ESRGAN_x4.pth (xinntao)
+* RRDB_PSNR_x4.pth (xinntao)
+* ESRGAN.pth (KAIR)
+* DF2K.pth
+ 
 ## Repository & Directory Structure
 
 <p align="justify">The repository and directory structure of
