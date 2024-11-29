@@ -5,6 +5,12 @@ helps you, or if it is useful, you are welcome to [donate](#Donation)
 a small contribution. It motivates me a lot and speeds up my work
 a much 😏.</p></b>
 
+## SHORT DESCRIPTION
+
+> <p align="justify">Resources for converting of models from old ESRGAN
+> to new ESRGAN architecture. Resources for converting RealESRGAN models
+> to a new ESRGAN model.</p>
+
 ## Preface
 
 <p align="justify">A small idea has now turned into a small project.
