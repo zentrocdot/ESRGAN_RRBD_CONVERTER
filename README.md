@@ -91,6 +91,8 @@ is [8].</p>
 
 Abbreviations explained can be found [here](https://civitai.com/articles/7432/ai-abbreviations-uncovered).
 
+### ESRGAN & RealESRGAN
+
 <p align="justify">Within this repository I am focussing on ESRGAN
 and RealESRGAN. When we are talking about the implmentation of what 
 the last sections explains, we have to discuss the internal structure 
@@ -146,30 +148,6 @@ RealsESRGAN. This is important driven by the fact that sometime
 a model is wrong declared. Next I wrot a converter from RealESRGAN
 to ESRGAN. This converter works so far quite good.</p>
 
-## How to Use the Main Converter
-
-<p align="justify">You need following two files from the <code>scripts</code>
-folder to get the converter run.</p>
-
-```
-RRDBNet_arch.py
-```
-
-```
-converter_RRDB_models.py
-```
-
-<p align="justify"><code>converter_RRDB_models.py</code> is the
-converter script and <code>RRDBNet_arch.py</code> is the Python 
-module which contains the classes which are required to run the
-converter script. The latter file is imported from the converter.
-</p>
-
-<p align="justify">Run the converter as follows:</p>
-
-```
-python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
-```
 
 ## Error Handling
 
@@ -282,11 +260,40 @@ which can be downloaded from [5].</p>
 
 ## Easy Way to Test the Converter
 
+### Installation
+
 Clone this github repository.
 
 ```
 git clone https://github.com/xinntao/ESRGAN
 cd ESRGAN_RRDB_CONVERTER
+```
+
+Or use the zip-file or siply download the files, which you need.
+
+### How to Use the Main Converter
+
+<p align="justify">You need following two files from the <code>scripts</code>
+folder to get the converter run.</p>
+
+```
+RRDBNet_arch.py
+```
+
+```
+converter_RRDB_models.py
+```
+
+<p align="justify"><code>converter_RRDB_models.py</code> is the
+converter script and <code>RRDBNet_arch.py</code> is the Python 
+module which contains the classes which are required to run the
+converter script. The latter file is imported from the converter.
+</p>
+
+<p align="justify">Run the converter as follows:</p>
+
+```
+python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 ```
 
 ## To-Do
