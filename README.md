@@ -81,7 +81,7 @@ SRGAN. ESRGAN and RealESRGAn are direct improvments of SRGAN. The
 influence of EDSR should also be noted. A good article to the topic
 is [8].</p>
 
-Abbreviation explained can be found [here]([https://pages.github.com/](https://civitai.com/articles/7432/ai-abbreviations-uncovered)).
+Abbreviation explained can be found [here](https://civitai.com/articles/7432/ai-abbreviations-uncovered).
 
 
 <p align="justify">Within this repository I am focussing on ESRGAN
