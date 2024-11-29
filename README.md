@@ -165,8 +165,8 @@ python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 
 ## Error Handling
 
-<p align="justify">Errors are catched and the Tracback is printed out into the terminal window. This looks like:
-</p>
+<p align="justify">Errors are catched and the <i>Traceback</i>
+is printed out into the terminal window. This looks like:</p>
 
 ```
 Traceback (most recent call last):
@@ -181,7 +181,9 @@ KeyError: 'model.8.bias'
 
 ```
 
-<p align="justify">Other errors need to be catched also.</p>
+<p align="justify">This is no longer an error. This behaviour
+is considered in the last version of the converter. But other
+errors need to be catched.</p>
 
 ## Conversion Process
 
