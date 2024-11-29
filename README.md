@@ -160,7 +160,7 @@ converter script. The latter file is imported from the converter.
 <p align="justify">Run the converter as follows:</p>
 
 ```
-python3 converter_RRDB_models.py upscaler_model_file_name.pth
+python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 ```
 
 ## Error Handling
