@@ -244,7 +244,8 @@ new models. No need for a conversion:</p>
 
 ## Tested Models
 
-<p align="justify">Subsequently listed ESRGAN models next others I have tested and successful converted:</p>
+<p align="justify">Subsequently listed ESRGAN models next others
+I have tested and successful converted:</p>
  
 + 4xLSDIRplus.pth
 + 4x_foolhardy_Remacri.pth
@@ -272,23 +273,39 @@ The algorithm seems to work well so far.</p>
 <p align="justify">AUTOMATIC is using the ESRGAN model
 which can be downloaded from [5].</p>
 
-## Example
+## Practical Application Example
 
-I used the following AI created image to show how the conversion from one model 
-to another model works. The original jpg image has a resolution of 512 x 512 pixel.
+<p align="justify">I used the following AI created image to show how
+the conversion from one model to another model works. The original jpg
+image has a resolution of 512 x 512 pixel.</p>
 
 <a target="_blank" href=""><img src="./images/shedevil.jpg" alt="button panel"></a>
 
-I used the old ESRGAN model <code>RRDB_PSNR_x4_old_arch.pth</code> from xinntao and
-converted this model to a new ESRGAN model. I used the RealESRGAN model <code>RRDB_RealESRGAN_x4plus.pth</code>
-from xinntao and converted this model to a new ESRGAN model.
+<p align="justify">I used the old ESRGAN model 
+<code>RRDB_PSNR_x4_old_arch.pth</code> from xinntao 
+and converted this model to a new ESRGAN model. I used 
+the RealESRGAN model <code>RRDB_RealESRGAN_x4plus.pth</code> from 
+xinntao and converted this model to a new ESRGAN model.</p>
 
-One can see is the following collage, what the theory to the both approaches states.
-There are upscaling artifact in the ESRGAN created image and no longer upscaling
-artifacts in the RealSRGAN created image. I zoomed in the face of the girl in the
-created images to show the effects. 
+<p align="justify">One can see is the following collage, what the theory
+to the both approaches states. There are upscaling artifact in the ESRGAN
+created image and no longer upscaling artifacts in the RealSRGAN created
+image. I zoomed in the face of the girl in the created images to show the
+effects.</p> 
 
 <a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
+
+## Advantage and Disadvantage ESRGAN
+
+<p align="justify">The disadvantage of ESRGAN is the fact that the models are
+restircted to an upscaling of factor 4. The advantage is that there are a lot
+of models which can be used.</p>
+
+## Advantage and Disadvantage RealESRGAN
+
+<p align="justify">The disadvantage of ESRGAN is the fact that there are are a 
+limited number of models which can be used. The advantage is the fact that in 
+principle an upscaling with an arbitrary scale factor is possible.</p>
 
 ## Pickle Tensor
 
@@ -333,6 +350,9 @@ And I am also need an improvement of this documentation.</p>
 for ESRGAN and RealESRGAN. Then the original or converted models can be tested
 directly.</p>
 
+<p align="justify">Try to create a converter which converts ESRGAN models to
+RealESRGAN models.</p>
+
 ## Test Environment
 
 <p align="justify">I developed and tested the Python scripts using 
@@ -340,9 +360,9 @@ the following software development environment:</p>
 
 * Linux Mint 21.3 (Virginia)
 * Python 3.10.14
+* Numpy  2.1.3
 * OpenCV 4.10.0
 * PIL 11.0.0
-* Numpy  2.1.3
 * Torch 2.4.1+cu121
   
 ## Licenses
