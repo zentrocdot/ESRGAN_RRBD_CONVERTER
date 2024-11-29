@@ -78,14 +78,43 @@ is [8].</p>
 
 
 <p align="justify">Within this repository I am focussing on ESRGAN
-and RealSRGAN. When we are talking about the implmentation of what 
+and RealESRGAN. When we are talking about the implmentation of what 
 the last sections explains, we have to discuss the internal structure 
 of given ESRGAN model.</p>
 
+<p align="justify">The old (outdated) models have a differnet internal
+structure to the new (current) models with respect to the used keys.
+The value to the key is still a tensor.</p>
+
+<p align="justify">For the conversion one needs a translation table
+or conversion table for the keys which looks like:</p>
+
+```
+    "model.0.weight"                     ->  "conv_first.weight"
+    "model.0.bias"                       ->  "conv_first.bias":
+    "model.1.sub.0.RDB1.conv1.0.weight"  ->  "RRDB_trunk.0.RDB1.conv1.weight" 
+    "model.1.sub.0.RDB1.conv1.0.bias"    ->  "RRDB_trunk.0.RDB1.conv1.bias"
+    "model.1.sub.23.weight"              ->  "trunk_conv.weight"
+    "model.1.sub.23.bias"                ->  "trunk_conv.bias" 
+    "model.3.weight"                     ->  "upconv1.weight" 
+    "model.3.bias"                       ->  "upconv1.bias" 
+    "model.6.weight"                     ->  "upconv2.weight" 
+    "model.6.bias"                       ->  "upconv2.bias" 
+    "model.8.weight"                     ->  "HRconv.weight" 
+    "model.8.bias"                       ->  "HRconv.bias" 
+    "model.10.weight"                    ->  "conv_last.weight"
+    "model.10.bias"                      ->  "conv_last.bias"
+
+<p align="justify">The value to the key is a tensor. One has
+to consider while converting that given tensor shape is the
+tensor shape which is required by the final model.</p>
+
 ## What is Implemented So Far
 
-<p align="justify">I modified the shipped with converter for old 
-RSGAN to new RSGAN for my persnal purposes..</p>
+```
+
+<p align="justify">I have converted the original supplied converter
+for old RSGAN to the new RSGAN for my personal purposes.</p>
 
 ## How to Use the Converter
 
