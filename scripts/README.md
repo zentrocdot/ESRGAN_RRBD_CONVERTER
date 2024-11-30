@@ -12,6 +12,8 @@ Converter for old ESRGAN to new ESRGAN models. Based direct on the conversion ap
 
 Experimenta converter for old ESRGAN to new ESRGAN models. Something else based on the methodology of the conversion application of xinntao.
 
+---
+
 ## RealESRGAN_test.py
 
 Upscaler for RealESRGAN model.
