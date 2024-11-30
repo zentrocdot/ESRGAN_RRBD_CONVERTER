@@ -11,9 +11,7 @@
 
 ---
 
-### CONTRIBUTE FOR IMPROVEMENT
-
-#### Donation
+### CONTRIBUTION
 
 <b><p align="justify">If you like what I present here, or if it 
 helps you, or if it is useful, you are welcome to [donate](#Donation)
