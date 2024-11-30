@@ -1,5 +1,5 @@
 #!/usr/bin/python
-'''ESRGan to RealESRGAN Converter.'''
+'''ESRGAN to RealESRGAN Converter.'''
 #
 # ESRGAN to RealESRGAN Converter
 # Version 0.0.0.1
