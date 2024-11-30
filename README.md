@@ -2,7 +2,7 @@
 
 > ### SHORT DESCRIPTION
 >
-> ##### Repository Content 
+> #### Repository Content 
 >
 > <p align="justify">Resources for converting of models from old ESRGAN
 > to new ESRGAN architecture. Resources for converting RealESRGAN models
@@ -15,7 +15,7 @@
 
 ### CONTRIBUTE FOR IMPROVEMENT
 
-##### Donation
+#### Donation
 
 <b><p align="justify">If you like what I present here, or if it 
 helps you, or if it is useful, you are welcome to [donate](#Donation)
