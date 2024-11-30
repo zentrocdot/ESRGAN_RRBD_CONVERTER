@@ -1,6 +1,6 @@
 # ESRN RRBG CONVERTER [![GitHub - ESRGAN](https://img.shields.io/badge/GitHub-ESRGAN-2ea44f)](https://github.com/xinntao/ESRGAN) [![GitHub  - RealEsrGAN](https://img.shields.io/badge/GitHub_-RealEsrGAN-9933ff)](https://github.com/xinntao/Real-ESRGAN)
 
-## SHORT DESCRIPTION
+### SHORT DESCRIPTION
 
 ##### Repository Content 
 
@@ -10,7 +10,7 @@
 > new ESRGAN models to RealESRGAN models. Bonus material are the standalone
 > upscalers for ESRGAN and RealESRGAN.</p>
 
-## CONTRIBUTE FOR IMPROVEMENT
+### CONTRIBUTE FOR IMPROVEMENT
 
 <b><p align="justify">If you like what I present here, or if it 
 helps you, or if it is useful, you are welcome to [donate](#Donation)
