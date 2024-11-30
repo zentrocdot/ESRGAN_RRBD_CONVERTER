@@ -1,6 +1,19 @@
 #!/usr/bin/python3
-'''ESRGAN to RealESRGAN Converter.'''
-#
+'''ESRGAN to RealESRGAN Converter.
+
+ESRGAN is available in form of Pickle Tensor files in the old and new
+architecture. Shortly spoken OLD ESRGAN or NEW ESRGAN. Both formats are
+incompatible with each other. RealESRGAN is a further development of
+ESRGAN. This format is incompatible with the aforementioned format. This
+script converts NEW ESRGAN to RealESRGAN.
+
+Weight, Bias and other data in RealESRGAN are given in an OrderedDict as
+value to a key in a dict. This is the main difference to ESRGAN. In ESRGAN
+Weight, Bias and other data are given as OrderedDict. The main goal of the
+converter is the translation of the different key words to the Tensors as
+values.
+
+'''
 # ESRGAN to RealESRGAN Converter
 # Version 0.0.0.1
 #
@@ -39,7 +52,7 @@ extension = fn_list[1]
 # Create the save name.
 save_name = basename + "_REAL" + extension
 
-# Define the conversion key table.
+# Define the conversion key table in form of a dict.
 CKT_DICT = {
             "conv_first.weight": "conv_first.weight",
             "conv_first.bias": "conv_first.bias",
@@ -55,9 +68,9 @@ CKT_DICT = {
             "conv_last.bias": "conv_last.bias"
            }
 
-# ------------
-# Reset screen
-# ------------
+# ------------------------------
+# Helper function. Reset screen.
+# ------------------------------
 def reset_term() -> None:
     '''Reset the terminal window.'''
     ESC_SEQ = "\33c"
@@ -65,9 +78,9 @@ def reset_term() -> None:
     sys.stdout.flush()
     return None
 
-# ------------
-# Clear screen
-# ------------
+# -----------------------------
+# Helper function Clear screen.
+# -----------------------------
 def clear_term() -> None:
     '''Clear the terminal window.'''
     ESC_SEQ = "\33[2J\33[H"
@@ -112,7 +125,7 @@ def main(filename: str, savename: str) -> None:
             new_net_clean[new_k] = v
     # Overwrite pretrained_net with load_net_clean.
     pretrained_net = new_net_clean
-    # Create a new dictionary.
+    # Create a new dictionary. This is the dictionary introducer.
     key_word = "params_ema"
     pretrained_net = {key_word: pretrained_net}
     # Save the new model.
