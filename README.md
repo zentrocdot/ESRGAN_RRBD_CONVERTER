@@ -378,8 +378,8 @@ the following software development environment:</p>
 ## Licenses
 
 <p align="justify">The algorithms with respect to ESRGAN of xinntao are published
-under theApache license. The original scripts and the improved scripts are covered
-by this license. I always publish my work under the MIT license.</p> 
+under the <i>Apache License</i>. The original scripts and the improved scripts are covered
+by this license. I always publish my work under the <i>MIT License</i>.</p> 
 
 ## Credits
 
