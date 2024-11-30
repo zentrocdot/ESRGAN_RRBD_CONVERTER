@@ -1,10 +1,6 @@
 # ESRGAN RRBG CONVERTER [![GitHub - ESRGAN](https://img.shields.io/badge/GitHub-ESRGAN-2ea44f)](https://github.com/xinntao/ESRGAN) [![GitHub  - RealEsrGAN](https://img.shields.io/badge/GitHub_-RealESRGAN-9933ff)](https://github.com/xinntao/Real-ESRGAN)
 
-## INTRO
-
-> ### SHORT DESCRIPTION
->
-> #### Repository Content 
+> ### SHORT DESCRIPTION OF REPOSITORY
 >
 > <p align="justify">Resources for converting of models from old ESRGAN
 > to new ESRGAN architecture. Resources for converting RealESRGAN models
