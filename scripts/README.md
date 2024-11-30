@@ -2,7 +2,7 @@
 
 ## RRDBNet_arch.py
 
-Python module with the main classes for RRDB.
+Python module with the main classes for RRDB. Needs to be be in the same directory as converter_RRDB_models.py and experimental_converter_RRDB_models.py.
 
 ## converter_RRDB_models.py
 
