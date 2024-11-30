@@ -308,13 +308,15 @@ effects.</p>
 
 <a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
 
-## Advantage and Disadvantage ESRGAN
+## Advantages and Disadvantages
+
+## ESRGAN
 
 <p align="justify">The disadvantage of ESRGAN is the fact that the models are
 restircted to an upscaling of factor 4. The advantage is that there are a lot
 of models which can be used.</p>
 
-## Advantage and Disadvantage RealESRGAN
+## RealESRGAN
 
 <p align="justify">The disadvantage of ESRGAN is the fact that there are are a 
 limited number of models which can be used. The advantage is the fact that in 
