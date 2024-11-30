@@ -4,6 +4,8 @@
 
 Python module with the main classes for RRDB. Needs to be be in the same directory as converter_RRDB_models.py and experimental_converter_RRDB_models.py.
 
+---
+
 ## converter_RRDB_models.py
 
 Converter for old ESRGAN to new ESRGAN models. Based direct on the conversion application of xinntao.
