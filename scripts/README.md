@@ -22,9 +22,11 @@ Converter for RealESRGAN to new ESRGAN models. Something else based on the metho
 
 ---
 
-## 
+## realesrgan_converter.py
 
-
+Converter for new ESRGAN models to RealESRGAN models. Used (still) 
+the naming of xinntao. Otherwise complete in-house development.
+Module RRDBNet_arch.py no longer required. Standalone working.
 
 ---
 
