@@ -10,6 +10,8 @@
 > new ESRGAN models to RealESRGAN models. Bonus material are the standalone
 > upscalers for ESRGAN and RealESRGAN.</p>
 
+---
+
 ### CONTRIBUTE FOR IMPROVEMENT
 
 ##### Donation
