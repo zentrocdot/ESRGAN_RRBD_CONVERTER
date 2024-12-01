@@ -330,9 +330,10 @@ the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p>
 
 ```bash
     └── esrgan_rrbd_converter
+        ├── converter
+        ├── upscaler
         ├── original
         ├── scripts
-        ├── upscaler
         └── tools
 ```
 
