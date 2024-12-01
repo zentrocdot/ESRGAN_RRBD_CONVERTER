@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''ESRGAN to RealESRGAN Converter.
+'''New ESRGAN to RealESRGAN Converter.
 
 ESRGAN is available in form of Pickle Tensor files in the old and new
 architecture. Shortly spoken OLD ESRGAN or NEW ESRGAN. Both formats are
