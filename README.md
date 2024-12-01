@@ -44,8 +44,8 @@ models can potentially be increased.
 
 <p align="justify">At short notice and on a whim, I took a closer and
 more intensive look at the topic. The interim result of my deliberations
-can be found here in the repository. However, only some of the things
-I tried out and did can be found here.</p>
+can be found here in the repository. But only some of the things I have
+tried and done can be found here.</p>
 
 <p align="justify">The quality of the results achieved in the meantime
 speaks for itself and justifies the use of ESRGAN and RealESRGAN.</p>
