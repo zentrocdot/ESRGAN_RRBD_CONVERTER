@@ -268,10 +268,14 @@ new models. No need for a conversion:</p>
 * ESRGAN.pth (KAIR)
 * DF2K.pth
 
-## Tested Models
+## Converted Models from Old ESRGAN to New ESRGAN
 
-<p align="justify">Subsequently listed ESRGAN models next others
-I have tested and successful converted:</p>
+<p align="justify">the focus of these repositories is on ISRGAN and
+everything around it. Later on I will check how I can consider RealESRGAn
+in a proper way.</p>
+
+<p align="justify">Subsequently listed old ESRGAN models next others
+I have tested and successful converted to new ESRGAN models:</p>
  
 + 4xLSDIRplus.pth
 + 4x_foolhardy_Remacri.pth
@@ -283,6 +287,7 @@ I have tested and successful converted:</p>
 + 4x-UniScaleV2_Sharp.pth
 + 4x_UniversalUpscalerV2-Sharp_101000_G.pth
 + 4x_Fatality_Comix_260000_G.pth
++ 4xFSDedither.pth
 + realesrgan-x4minus.pth
 + 4xPSNR.pth
 + 8xPSNR.pth
