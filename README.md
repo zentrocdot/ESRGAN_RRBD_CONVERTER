@@ -352,8 +352,8 @@ the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p>
         ├── upscaler
         ├── old_stuff
         ├── original
-        ├── scripts
-        └── tools
+        ├── tools
+        └── helper_scripts
 ```
 
 <p align="justify">The folder <code>original</code> contains the original 
