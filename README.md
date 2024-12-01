@@ -306,7 +306,11 @@ image has a resolution of 512 x 512 pixel.</p>
 
 <a target="_blank" href=""><img src="./images/shedevil.jpg" alt="button panel"></a>
 
+<i>Figure 1: Original image with a resolution of 512 x 512 pixel</i>
+
 <a target="_blank" href=""><img src="./images/out_fill.jpg" alt="button panel"></a>
+
+<i>Figure 2: Original image with marked area with a resolution of 512 x 512 pixel</i>
 
 <p align="justify">I used the old ESRGAN model 
 <code>RRDB_PSNR_x4_old_arch.pth</code> from xinntao 
@@ -321,6 +325,8 @@ image. I zoomed in the face of the girl in the created images to show the
 effects.</p> 
 
 <a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
+
+<i>Figure 3: Collage of the original image with 512 x 512 pixel and the upscaled images with 2048 x 2048 pixel</i>
 
 ## Advantages and Disadvantages
 
