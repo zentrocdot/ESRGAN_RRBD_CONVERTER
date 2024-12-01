@@ -332,6 +332,7 @@ the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p>
     └── esrgan_rrbd_converter
         ├── converter
         ├── upscaler
+        ├── old_stuff
         ├── original
         ├── scripts
         └── tools
@@ -348,21 +349,17 @@ like the one for analysing the model structure. The folder <code>scripts
 is working and under which conditions the converter is not working.</p>
 
 <p align="justify">Analysis of the internal model structure to understand
-the formatting of different models related to RRDB models.</p>
+the formatting of different models related to RRDB related models.</p>
  
 <p align="justify">I have to catch errors while executing the script.
-In the experimental version I was able to realise this in a rudimentary
-way.</p>
+In the experimental versions I realised this in a rudimentary way.</p>
+
+<p align="justify">Error handling and the output of warnings must be 
+improved. Dealing with three similar models harbours the risk of
+getting confused with the models.</p>
  
-<p align="justify">I need an improvement of the comments in the script.
-And I am also need an improvement of this documentation.</p>
-
-<p align="justify">As soon as I have time, I will programme two slim upscalers
-for ESRGAN and RealESRGAN. Then the original or converted models can be tested
-directly.</p>
-
-<p align="justify">Try to create a converter which converts ESRGAN models to
-RealESRGAN models.</p>
+<p align="justify">I need an improvement of the comments and documentation 
+in the scripts. And I am also need an improvement of this documentation.</p>
 
 ## Test Environment
 
