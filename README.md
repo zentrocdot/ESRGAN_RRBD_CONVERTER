@@ -1,13 +1,13 @@
 # ESRGAN RRBG CONVERTER [![GitHub - ESRGAN](https://img.shields.io/badge/GitHub-ESRGAN-2ea44f)](https://github.com/xinntao/ESRGAN) [![GitHub  - RealEsrGAN](https://img.shields.io/badge/GitHub_-RealESRGAN-9933ff)](https://github.com/xinntao/Real-ESRGAN)
 
-> #### SHORT DESCRIPTION OF REPOSITORY
->
-> <p align="justify">Resources for converting of models from old ESRGAN
-> to new ESRGAN architecture. Resources for converting RealESRGAN models
-> to new ESRGAN models. There is also a new converter for converting 
-> new ESRGAN models to RealESRGAN models. Bonus material are the standalone
-> upscalers for ESRGAN and RealESRGAN. (The latter two are rudimentarily
-> documented).</p>
+#### SHORT DESCRIPTION OF the REPOSITORY
+
+<p align="justify">Resources for converting of models from old ESRGAN
+to new ESRGAN architecture. Resources for converting RealESRGAN models
+to new ESRGAN models. There is also a new converter for converting 
+new ESRGAN models to RealESRGAN models. Bonus material are the standalone
+upscalers for ESRGAN and RealESRGAN. (The latter two are rudimentarily
+documented).</p>
 
 ---
 
@@ -19,6 +19,10 @@ a small contribution. It motivates me a lot and speeds up my work
 a much 😏.</p></b>
 
 ---
+
+> [!NOTE]
+> All scripts are programmed for use under the operating system Linux.
+> I do not consider other operating systems due to lack of time.
 
 ## Preface
 
