@@ -288,6 +288,7 @@ I have tested and successful converted to new ESRGAN models:</p>
 + 4x_UniversalUpscalerV2-Sharp_101000_G.pth
 + 4x_Fatality_Comix_260000_G.pth
 + 4xFSDedither.pth
++ 4xNomos8kSC.pth
 + realesrgan-x4minus.pth
 + 4xPSNR.pth
 + 8xPSNR.pth
