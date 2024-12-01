@@ -163,6 +163,16 @@ RealsESRGAN. This is important driven by the fact that sometime
 a model is wrong declared. Next I wrot a converter from RealESRGAN
 to ESRGAN. This converter works so far quite good.</p>
 
+## Testing
+
+<p align="justify">For testing purpose I wrote an upscaler for
+ESRGAN and an upscaler for RealESRGAN. Both are upscaling an
+image and simply save them.</p>
+
+<p align="justify">I used these two upscalers next to an experimental
+version of my Lazy Image Upscaler to check that the converter are 
+working the right way.</p>
+
 ## Easy Way to Test the Converter
 
 ### Installation
