@@ -326,7 +326,7 @@ effects.</p>
 
 <a target="_blank" href=""><img src="./images/collage.jpg" alt="button panel"></a>
 
-<i>Figure 3: Collage of the original image with 512 x 512 pixel and the upscaled images with 2048 x 2048 pixel</i>
+<i>Figure 3: Collage of the cropped area of the original image with 512 x 512 pixel and the upscaled images with 2048 x 2048 pixel</i>
 
 ## Advantages and Disadvantages
 
