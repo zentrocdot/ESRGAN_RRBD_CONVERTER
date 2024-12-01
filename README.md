@@ -24,7 +24,7 @@ a much 😏.</p></b>
 > <p align="justify">All scripts are programmed for use with the Linux
 > operating system. I do not consider other operating systems due to
 > time constraints. The software used is freely available and makes
-> no special demands on the operating system.
+> no special demands on the operating system.</p>
 
 ## Preface
 
