@@ -6,7 +6,7 @@
 to new ESRGAN architecture. Resources for converting RealESRGAN models
 to new ESRGAN models. There is also a new converter for converting 
 new ESRGAN models to RealESRGAN models. Bonus material are the standalone
-upscalers for ESRGAN and RealESRGAN. (The latter two are rudimentarily
+upscalers for ESRGAN and RealESRGAN (The latter two are rudimentarily
 documented).</p>
 
 ---
