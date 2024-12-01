@@ -21,10 +21,10 @@ a much 😏.</p></b>
 ---
 
 > [!NOTE]
-> All scripts are programmed for use with the Linux operating system.
-> I do not consider other operating systems due to time constraints.
-> The software used is freely available and makes no special demands
-> on the operating system.
+> <p align="justify">All scripts are programmed for use with the Linux
+> operating system. I do not consider other operating systems due to
+> time constraints. The software used is freely available and makes
+> no special demands on the operating system.
 
 ## Preface
 
