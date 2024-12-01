@@ -332,6 +332,7 @@ the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p>
     └── esrgan_rrbd_converter
         ├── original
         ├── scripts
+        ├── upscaler
         └── tools
 ```
 
