@@ -76,18 +76,31 @@ old ESRGAN → new ESRGAN → RealESRGAN
 RealESRGAN → new ESRGAN
 ```
 
+## How the Converter Works
+
+<p align="justify">Each converter simply changes the 
+literal representation of each key with respect to the
+related model.</p>
+
+<p align="justify">The change of the literal values of
+the keys is realised via a conversion table and substring
+replacements. Literal string 1 is replaced by literal
+string 2. Substring 1 is replaced by substring 2, etc.
+In the end, the literal strings of the keys correspond
+to the specifications of the model..</p>
+
 ## Why Are This Converters Working
 
-<p align="justify">I refer to new ESRGAN as a 
-reference for all considerations</p>
-
-<p align="justify">All explanations refer to new
-ESRGAN. The other explanations for the other models 
-can be transferred or derived.</p>
+<p align="justify">I refer to the new ESRGAN model as 
+a reference for all considerations. Therefore, all
+explanations refer to the new ESRGAN model. The other
+explanations of the other models can be transferred or
+derived from them.</p>
 
 <p align="justify">I wrote two test scripts to show
 how it works. The test scripts can be found in the 
-folder <code>test_scripts</code>.</p>
+folder <code>test_scripts</code> in the main directory.
+</p>
 
 <p align="justify">The first script creates a model.
 Then I am extracting the state dict of the model.
@@ -96,7 +109,8 @@ in form of key/value as skeleton. Next I am loading
 in a second script the available upscaler. Then I am
 printing the content (state dict) of this model in
 form of key/value as skeleton. I am writing both 
-results in a text file and both files are identical.
+results in a text file and compare both files. Both
+files to my own surprise are identical.
 
 ```
 python3 ESRGAN_RRDB_model.py > test1.txt
@@ -109,12 +123,6 @@ results in
 Files test1.txt and test2.txt are identical.
 
 ```
-
-## How the Converter Works
-
-<p align="justify">Each converter simply changes the 
-literal representation of each key with respect to the
-related model.</p>
 
 ## Printout of a State Dict
 
