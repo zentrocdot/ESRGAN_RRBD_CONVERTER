@@ -61,7 +61,7 @@ old ESRGAN → new ESRGAN → RealESRGAn
 + Scenario II
 
 ```
-RealESrgan →  new ESRGAN
+RealESrgan → new ESRGAN
 ```
 
 ## Why Are This Converters Working
