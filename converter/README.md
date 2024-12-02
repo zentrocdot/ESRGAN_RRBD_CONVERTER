@@ -11,7 +11,7 @@ and using AI models, there are some basic things to clarify.</p>
 <p align="justify">The names of the converters are self-explanatory.</p>
 
 - oldESRGAN_to_newESRGAN_converter.py
-- ewESRGAN_to_RealESRGAN_converter.py
+- newESRGAN_to_RealESRGAN_converter.py
 - RealESRGAN_to_newESRGAN_converter.py
 
 <p align="justify">Usage:</p>
