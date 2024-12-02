@@ -58,7 +58,7 @@ can be transferred or derived.</p>
 how it works. The test scripts can be found in the 
 folder <code>test_scripts</code>.</p>
 
-<p align="justify">The fist script creates a model.
+<p align="justify">The first script creates a model.
 Then I am extracting the state dict of the model.
 Afterwards I am printing the state dict of this model
 in form of key/value as skeleton. Next I am loading
