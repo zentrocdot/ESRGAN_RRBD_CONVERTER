@@ -184,3 +184,9 @@ conv_last.bias                   ->  tensor([...], size=(3,))
 [2] https://github.com/xinntao/Real-ESRGAN
 
 [3] https://pytorch.org/docs/stable/generated/torch.load.html
+
+[4] https://pytorch.org/tutorials/beginner/saving_loading_models.html
+
+[5] https://pytorch.org/tutorials/recipes/recipes/what_is_state_dict.html
+
+[6] https://pytorch.org/docs/stable/generated/torch.nn.Module.html
