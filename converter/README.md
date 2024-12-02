@@ -79,6 +79,12 @@ Files test1.txt and test2.txt are identical.
 
 ```
 
+## How the Converter Works
+
+<p align="justify">Each converter simply changes the 
+literal representation of each key with respect to the
+related model.</p>
+
 ## Printout of a State Dict
 
 <p align="justify">We can distinguish between three sections.
@@ -177,4 +183,4 @@ conv_last.bias                   ->  tensor([...], size=(3,))
 
 [2] https://github.com/xinntao/Real-ESRGAN
 
-[3] 
+[3] https://pytorch.org/docs/stable/generated/torch.load.html
