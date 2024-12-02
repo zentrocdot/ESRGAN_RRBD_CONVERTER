@@ -210,6 +210,8 @@ conv_last.bias                   ->  tensor([...], size=(3,))
 
 [6] https://pytorch.org/docs/stable/generated/torch.nn.Module.html
 
+[7] https://markaicode.com/mastering-pytorch-load_state_dict/
+
 ## Donation
 
 <p align="justify">If you like what I present here, or if it helps you,
