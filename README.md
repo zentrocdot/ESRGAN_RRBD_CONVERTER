@@ -436,6 +436,7 @@ The results that can be achieved with his approach are more than good.</p>
 [8] https://ar5iv.labs.arxiv.org/html/1809.00219
 
 [9] https://openaccess.thecvf.com/content/ICCV2021W/AIM/papers/Wang_Real-ESRGAN_Training_Real-World_Blind_Super-Resolution_With_Pure_Synthetic_Data_ICCVW_2021_paper.pdf
+
 ## Donation
 
 <p align="justify">If you like what I present here, or if it helps you,
