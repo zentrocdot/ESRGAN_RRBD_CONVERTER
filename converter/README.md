@@ -6,6 +6,14 @@
 things for myself. Since I am absolutely new to the field of creating
 and using AI models, there are some basic things to clarify.</p>
 
+<p align="justify">The approach I have chosen here does not require any
+knowledge of the underlying model. The model is used as it is. So far,
+the conversion has worked well on this basis.</p>
+
+<p align="justify">During the conversions, I make sure that the data
+structures are adhered to exactly. For example, I use dict and
+OrderedDict if the underlying model would do the same.</p>
+
 ## CONVERTERS
 
 <p align="justify">The names of the converters are self-explanatory.</p>
@@ -17,9 +25,9 @@ and using AI models, there are some basic things to clarify.</p>
 <p align="justify">Usage:</p>
 
 ```
-oldESRGAN_to_newESRGAN_converter.py <upscaler_model.pth>
-newESRGAN_to_RealESRGAN_converter.py <upscaler_model.pth>
-RealESRGAN_to_newESRGAN_converter.py <upscaler_model.pth>
+oldESRGAN_to_newESRGAN_converter.py <model_name.pth>
+newESRGAN_to_RealESRGAN_converter.py <model_name.pth>
+RealESRGAN_to_newESRGAN_converter.py <model_name.pth>
 
 ```
 
