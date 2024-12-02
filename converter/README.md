@@ -12,8 +12,8 @@ a much 😏.</p></b>
 ---
 
 > [!NOTE]
-> I always assume that Linux is used as the operating system. If I
-> use Linux command line commands in this documentation, I do not
+> I always assume that <i>Linux</i> is used as the operating system. If I
+> use <i>Linux</i> command line commands in this documentation, I do not
 >  explicitly point this out.
 
 ## Preface
