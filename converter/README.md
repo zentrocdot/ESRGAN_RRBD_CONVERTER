@@ -21,9 +21,21 @@ and using AI models, there are some basic things to clarify.</p>
 knowledge of the underlying model. The model is used as it is. So far,
 the conversion has worked well on this basis.</p>
 
+<p align="justify">As this is a simple transformation from one 
+architecture to another, I don't add anything, remove anything 
+or change anything in the weight and bias values.</p>
+
 <p align="justify">During the conversions, I make sure that the data
 structures are adhered to exactly. For example, I use dict and
 OrderedDict if the underlying model would do the same.</p>
+
+## Motivation
+
+<p align="justify">I am always interested in the simplest way to
+solve a problem. The fact that I have to use an external Python
+module or integrate the related classes in my scripts has made 
+me look for a simpler solution. The result of my thoughts can 
+be found here.</p>
 
 ## CONVERTERS
 
