@@ -42,6 +42,14 @@ module or integrate the related classes in my scripts has made
 me look for a simpler solution. The result of my thoughts can 
 be found here.</p>
 
+## Side Note
+
+<p align="justify">The converters presented are not fail-safe.
+It may be that a conversion is successfully carried out, but 
+that the model does not work. To overcome this problem I wrote
+a small script, which can be found in the test_scripts folder.
+</p>
+
 ## CONVERTERS
 
 <p align="justify">The names of the converters are self-explanatory.</p>
