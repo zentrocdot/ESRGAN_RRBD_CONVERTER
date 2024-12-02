@@ -67,13 +67,13 @@ the arrows.</p>
 + Scenario I
 
 ```
-old ESRGAN → new ESRGAN → RealESRGAn
+old ESRGAN → new ESRGAN → RealESRGAN
 ```
 
 + Scenario II
 
 ```
-RealESrgan → new ESRGAN
+RealESRGAN → new ESRGAN
 ```
 
 ## Why Are This Converters Working
