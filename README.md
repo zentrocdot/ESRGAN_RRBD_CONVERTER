@@ -73,7 +73,7 @@ from different other sources.</p>
 
 ## Introduction
 
-<p align="justify">I implemneted ERSGAN [1] and RealESRGAN [2] in
+<p align="justify">I implemented ERSGAN [1] and RealESRGAN [2] in
 my <i>Lazy Image Upscaler</i>. To be able to test more than the given
 four models from xinntao I searched and collected other ERSGAN models
 and tried them out, most of the time without success. One model in use
