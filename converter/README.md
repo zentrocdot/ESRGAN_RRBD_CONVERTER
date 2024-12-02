@@ -221,6 +221,9 @@ conv_last.weight                 ->  tensor([...], size=(3, 64, 3, 3))
 conv_last.bias                   ->  tensor([...], size=(3,))
 ```
 
+<p align="justify">For the converter to work, the above structure must
+be mapped in relation to the key and the shapes of the tensor as shown.</p>
+
 ## References
 
 [1] https://github.com/xinntao/ESRGAN
