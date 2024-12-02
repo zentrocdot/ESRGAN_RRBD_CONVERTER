@@ -11,6 +11,11 @@ a much 😏.</p></b>
 
 ---
 
+> [!NOTE]
+> I always assume that Linux is used as the operating system. If I
+> use Linux command line commands in this documentation, I do not
+>  explicitly point this out.
+
 ## Preface
 
 <p align="justify">I am writing this README section to clarify some
