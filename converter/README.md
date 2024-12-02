@@ -2,17 +2,24 @@
 
 # Preface
 
-<p align="justify">Resources for converting of models from old ESRGAN
-to new ESRGAN architecture. Resources for converting RealESRGAN models
-to new ESRGAN models. There is also a new converter for converting 
-new ESRGAN models to RealESRGAN models. Bonus material are the standalone
-upscalers for ESRGAN and RealESRGAN (The latter two are rudimentarily
-documented). Last standalone converter versions can be found in folder
-<code>converter</code>.</p>
+<p align="justify">I am writing this README section for the purpose
+of clarifying some things for myself. Based on the fact that I am 
+absolutely new to the field of AI model creation and use, there are
+some basic things to clarify.</p>
+
+<p align="justify">I am currently considering two scenarios for the
+converters.</p>
+
+<p align="justify">The directions of the conversions are shown by
+the arrows.</p>
+
++ Scenario I
 
 ```
-old ESRGAN → new ESRGAN ← RealESrgan
+old ESRGAN → new ESRGAN ← RealESRGAn
 ```
+
++ Scenario II
 
 ```
 new ESRGAN → RealESrgan
