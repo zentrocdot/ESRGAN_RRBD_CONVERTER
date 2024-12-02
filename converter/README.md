@@ -10,22 +10,22 @@ and using AI models, there are some basic things to clarify.</p>
 
 <p align="justify">The names of the converters are self-explanatory.</p>
 
-+ oldESRGAN_to_newESRGAN_converter.py
-+ newESRGAN_to_RealESRGAN_converter.py
-+ RealESRGAN_to_newESRGAN_converter.py
+oldESRGAN_to_newESRGAN_converter.py
+newESRGAN_to_RealESRGAN_converter.py
+RealESRGAN_to_newESRGAN_converter.py
 
 <p align="justify">Usage:</p>
 
 ```
-+ oldESRGAN_to_newESRGAN_converter.py <upscaler_model.pth>
-+ newESRGAN_to_RealESRGAN_converter.py <upscaler_model.pth>
-+ RealESRGAN_to_newESRGAN_converter.py <upscaler_model.pth>
+oldESRGAN_to_newESRGAN_converter.py <upscaler_model.pth>
+newESRGAN_to_RealESRGAN_converter.py <upscaler_model.pth>
+RealESRGAN_to_newESRGAN_converter.py <upscaler_model.pth>
 
 ```
 
 # TL;DR
 
-## Conversions
+## Possible Conversions
 
 <p align="justify">I am currently considering two scenarios for the
 converters.</p>
@@ -45,14 +45,56 @@ old ESRGAN → new ESRGAN → RealESRGAn
 RealESrgan →  new ESRGAN
 ```
 
-I wrote two test scripts to show how it works.
+## Why Are This Converters Working
 
+<p align="justify">I refer to new ESRGAN as a 
+reference for all considerations</p>
 
-I refer to new ESRGAN as a reference for all considerations
+<p align="justify">All explanations refer to new
+ESRGAN. The other explanations for the other models 
+can be transferred or derived.</p>
+
+<p align="justify">I wrote two test scripts to show
+how it works. The test scripts can be found in the 
+folder <code>test_scripts</code>.</p>
+
+<p align="justify">The fist script creates a model.
+Then I am extracting the state dict of the model.
+Afterwards I am printing the state dict of this model
+in form of key/value as skeleton. Next I am loading
+in a second script the available upscaler. Then I am
+printing the content (state dict) of this model in
+form of key/value as skeleton. I am writing both 
+results in a text file and both files are identical.
+
+```
+python3 ESRGAN_RRDB_model.py > test1.txt
+python3 ESRGAN_RRDB_model_test.py > test2.txt
+
+diff -s test1.txt test2.txt
+
+results in
+
+Files test1.txt and test2.txt are identical.
+
+```
+
+## Printout of a State Dict
+
+<p align="justify">We can distinguish between three sections.
+This are two header line, the body with weight/bias and the
+ten footer line.</p>
+
+<p align="justify">The printout is still a skeleton consisting
+of key and value in form of a tensor with the size/shape of the
+tensor. The internal tensor data are omitted. The spaces and the
+vertical dots are added for a better visibility. The key items
+are numbered in the full version from 0 to 22.</p>
 
 ```
 conv_first.weight                ->  tensor([...], size=(64, 3, 3, 3))
 conv_first.bias                  ->  tensor([...], size=(64,))
+
 RRDB_trunk.0.RDB1.conv1.weight   ->  tensor([...], size=(32, 64, 3, 3))
 RRDB_trunk.0.RDB1.conv1.bias     ->  tensor([...], size=(32,))
 RRDB_trunk.0.RDB1.conv2.weight   ->  tensor([...], size=(32, 96, 3, 3))
@@ -116,6 +158,7 @@ RRDB_trunk.22.RDB3.conv4.weight  ->  tensor([...], size=(32, 160, 3, 3))
 RRDB_trunk.22.RDB3.conv4.bias    ->  tensor([...], size=(32,))
 RRDB_trunk.22.RDB3.conv5.weight  ->  tensor([...], size=(64, 192, 3, 3))
 RRDB_trunk.22.RDB3.conv5.bias    ->  tensor([...], size=(64,))
+
 trunk_conv.weight                ->  tensor([...], size=(64, 64, 3, 3))
 trunk_conv.bias                  ->  tensor([...], size=(64,))
 upconv1.weight                   ->  tensor([...], size=(64, 64, 3, 3))
@@ -126,11 +169,7 @@ HRconv.weight                    ->  tensor([...], size=(64, 64, 3, 3))
 HRconv.bias                      ->  tensor([...], size=(64,))
 conv_last.weight                 ->  tensor([...], size=(3, 64, 3, 3))
 conv_last.bias                   ->  tensor([...], size=(3,))
-
-
 ```
-
-
 
 ## References
 
