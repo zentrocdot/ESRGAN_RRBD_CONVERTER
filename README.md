@@ -287,6 +287,7 @@ take RealESRGAN into account in an appropriate way.</p>
 <p align="justify">The old ESRGAN models are listed below which
 I have tested and successfully converted to new ESRGAN models:</p>
  
++ 4xFSMangaV2_CVTD.pth
 + 4xLSDIRplus.pth
 + 4xNomos2_otf_esrgan.pth
 + 4xNomosWebPhoto_esrgan.pth
@@ -296,6 +297,7 @@ I have tested and successfully converted to new ESRGAN models:</p>
 + 4x-UltraSharp.pth
 + 4x-UniScale_Restore.pth
 + 4x-UniScaleV2_Sharp.pth
++ 4x_BooruGan_600k_CVTD
 + 4x_Fatality_Comix_260000_G.pth
 + 4x_foolhardy_Remacri.pth
 + 4x_FuzzyBox.pth
@@ -309,6 +311,10 @@ I have tested and successfully converted to new ESRGAN models:</p>
 + realesrgan-x4minus.pth
 + RRDB_PSNR_x4_old_arch.pth (xinntao)
 + RRDB_ESRGAN_x4_old_arch.pth (xinntao)
+
+<p align="justify">After conversion I tried out all of
+the listed models. When there was a problem it is noted
+in the round brackets.</p>
 
 <p align="justify">The list is not complete, but shows
 that almost every old model can already be converted. 
