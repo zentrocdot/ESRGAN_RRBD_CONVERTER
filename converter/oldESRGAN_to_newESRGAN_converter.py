@@ -10,6 +10,8 @@
 # Version 0.0.0.3
 #
 # (C) 2024 zentrocdot
+# Published under the MIT License:
+# https://github.com/zentrocdot/ESRGAN_RRBD_CONVERTER#MIT-1-ov-file
 #
 # Description:
 # ------------
