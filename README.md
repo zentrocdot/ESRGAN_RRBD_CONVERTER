@@ -122,7 +122,7 @@ and RealESRGAN. When we are talking about the implmentation of what
 the last sections explains, we have to discuss the internal structure 
 of given ESRGAN model.</p>
 
-<p align="justify">The old (outdated) models have a differnet internal
+<p align="justify">The old (outdated) models have a different internal
 structure to the new (current) models with respect to the used keys.
 The value to the key is still a tensor.</p>
 
@@ -155,7 +155,7 @@ tensor shape which is required by the final model.</p>
 <p align="justify">I have converted the original supplied converter
 for old RSGAN to the new RSGAN for my personal purposes. Then I 
 modernized the implementation a little bit. Next I figured out, that
-some models look like ESRGAN modesl, but that they are not the models 
+some models look like ESRGAN models, but that they are not the models 
 I can use or that they are no ESRGAN or somes´thing is strange with
 the models. To have an idea what a model does I wrote a simple 
 analysing tools. This tool identifies highly reliable old an new
@@ -170,9 +170,9 @@ to ESRGAN. This converter works so far quite good.</p>
 ESRGAN and an upscaler for RealESRGAN. Both are upscaling an
 image and simply save them.</p>
 
-<p align="justify">I used these two upscalers next to an experimental
-version of my Lazy Image Upscaler to check that the converter are 
-working the right way.</p>
+<p align="justify">I used these two upscalers next to an
+experimental version of my Lazy Image Upscaler to check that 
+the converter are working the right way.</p>
 
 ## Easy Way to Test the Converter
 
@@ -181,15 +181,19 @@ working the right way.</p>
 Clone this github repository.
 
 ```
-git clone https://github.com/xinntao/ESRGAN
+git clone https://github.com/zentrocdot/ESRGAN_RRBD_CONVERTER.git
 cd ESRGAN_RRDB_CONVERTER
 ```
 
 Or use the zip-file or siply download the files, which you need.
 
-### How to Use the Main Converter
+### How to Use the Main OLD Converter
 
-<p align="justify">You need following two files from the <code>scripts</code>
+> [!NOTE]
+> <p align="justify">The following is the old description. Got to folder
+> <code>converter</code> for the new converters and description.</p>
+
+<p align="justify">You need following two files from the <code>old_stuff</code>
 folder to get the converter run.</p>
 
 ```
@@ -368,6 +372,8 @@ the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p>
         ├── old_stuff
         ├── original
         ├── tools
+        ├── images
+        ├── test_scripts
         └── helper_scripts
 ```
 
