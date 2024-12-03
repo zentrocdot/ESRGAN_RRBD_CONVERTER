@@ -459,7 +459,7 @@ as you might say: Every TRON counts! Many thanks in advance! :smiley:
 > ###### <p align="left">Crypto Coin Tron</p>
 
 ```
-TQamF8Q3z63sVFWiXgn2pzpWyhkQJhRtW7
+TQHgMpVzWkf3Lkd68QS7tcn7S5Y9ayg6Fu
 ```
 
 > ###### <p align="left">Crypto Coin Dogecoin</p>
@@ -471,12 +471,12 @@ DQYkNGW8VfCuUbM9Womnp6KiFdtMa4NUkD
 > ###### <p align="left">Crypto Coin Bitcoin</p>
 
 ```
-12JsKesep3yuDpmrcXCxXu7EQJkRaAvsc5
+bc1quy5nr5x4xgrtmnknuayysapg8t8tl4jqsgcu2t
 ```
 
 > ###### <p align="left">Crypto Coin Ethereum</p>
 
 ```
-0x31042e2F3AE241093e0387b41C6910B11d94f7ec
+0xD238a487F5147AC23c25908FC86129889E38BfB9
 ```
 <p align="left">$${\textnormal{\color{purple}Have a wonderful, beautiful and successful day. I also wish everyone peace on earth.}}$$</p>
