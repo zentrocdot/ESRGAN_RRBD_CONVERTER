@@ -280,29 +280,33 @@ new models. No need for a conversion:</p>
 
 ## Converted Models from Old ESRGAN to New ESRGAN
 
-<p align="justify">the focus of these repositories is on ISRGAN and
-everything around it. Later on I will check how I can consider RealESRGAn
-in a proper way.</p>
+<p align="justify">The focus of these repositories lies on ESRGAN
+and everything related to it. Later, I will look into how I can
+take RealESRGAN into account in an appropriate way.</p>
 
-<p align="justify">Subsequently listed old ESRGAN models next others
-I have tested and successful converted to new ESRGAN models:</p>
+<p align="justify">The old ESRGAN models are listed below which
+I have tested and successfully converted to new ESRGAN models:</p>
  
 + 4xLSDIRplus.pth
-+ 4x_foolhardy_Remacri.pth
-+ 4x_FuzzyBox.pth
++ 4xNomos2_otf_esrgan.pth
++ 4xNomosWebPhoto_esrgan.pth
++ 4xNomos8kSC.pth
++ 4xFSDedither.pth
++ 4x-eula-digimanga-MiA-65k.pth (Color reduction ???)
 + 4x-UltraSharp.pth
-+ 4x_NMKD-Siax_175k.pth
-+ 4x_NMKD-Siax_200k.pt
 + 4x-UniScale_Restore.pth
 + 4x-UniScaleV2_Sharp.pth
-+ 4x_UniversalUpscalerV2-Sharp_101000_G.pth
 + 4x_Fatality_Comix_260000_G.pth
-+ 4xFSDedither.pth
-+ 4xNomos8kSC.pth
-+ realesrgan-x4minus.pth
++ 4x_foolhardy_Remacri.pth
++ 4x_FuzzyBox.pth
++ 4x_IllustrationJaNai_V1_ESRGAN_135k_CVTD
++ 4x_NMKD-Siax_175k.pth
++ 4x_NMKD-Siax_200k.pt
++ 4x_UniversalUpscalerV2-Sharp_101000_G.pth
 + 4xPSNR.pth
 + 8xPSNR.pth
-+ 8x_NMKD-Superscale_150000_G.pth (color shift after conversion?)
++ 8x_NMKD-Superscale_150000_G.pth (color shift after conversion ???)
++ realesrgan-x4minus.pth
 + RRDB_PSNR_x4_old_arch.pth (xinntao)
 + RRDB_ESRGAN_x4_old_arch.pth (xinntao)
 
