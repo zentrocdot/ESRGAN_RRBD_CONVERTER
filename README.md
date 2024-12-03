@@ -190,8 +190,8 @@ Or use the zip-file or siply download the files, which you need.
 ### How to Use the Main OLD Converter
 
 > [!NOTE]
-> <p align="justify">The following is the old description. Got to folder
-> <code>converter</code> for the new converters and description.</p>
+> <p align="justify">The following is the old description. Go to the folder
+> <code>converter</code> for the new converters and descriptions.</p>
 
 <p align="justify">You need following two files from the <code>old_stuff</code>
 folder to get the converter run.</p>
