@@ -27,7 +27,7 @@ a much 😏.</p></b>
 > time constraints. The software used is freely available and makes
 > no special demands on the operating system.</p>
 
-# TL;DR: Use the Table of Contents for Content of Interest
+# TL;DR: Use the Table of Contents for Topics of Interest
 
 ## Preface
 
