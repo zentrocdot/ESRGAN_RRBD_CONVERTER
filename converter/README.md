@@ -27,7 +27,7 @@ knowledge of the underlying model. The model is used as it is. So far,
 the conversion has worked well on this basis.</p>
 
 <p align="justify">As this is a simple transformation from one 
-architecture to another, I don't add anything, remove anything 
+architecture to another, I do not add anything, remove anything 
 or change anything in the weight and bias values.</p>
 
 <p align="justify">During the conversions, I make sure that the data
@@ -47,8 +47,10 @@ be found here.</p>
 <p align="justify">The converters presented are not fail-safe.
 It may be that a conversion is successfully carried out, but 
 that the model does not work. To overcome this problem I wrote
-a small script, which can be found in the test_scripts folder.
-</p>
+a small script called <code>newESRGAN_RRDB_checker.py</code>,
+which can be found in the <code>test_scripts</code> folder of
+the main directory. Please note, this script checks only new
+ESRGAN models.</p>
 
 ## CONVERTERS
 
@@ -100,7 +102,7 @@ the keys is realised via a conversion table and substring
 replacements. Literal string 1 is replaced by literal
 string 2. Substring 1 is replaced by substring 2, etc.
 In the end, the literal strings of the keys correspond
-to the specifications of the model..</p>
+to the specifications of the model.</p>
 
 ## Why Are This Converters Working
 
@@ -123,7 +125,9 @@ in a second script the available upscaler. Then I am
 printing the content (state dict) of this model in
 form of key/value as skeleton. I am writing both 
 results in a text file and compare both files. Both
-files to my own surprise are identical.
+files to my own surprise are identical.</p>
+
+<p align="justify">Usage:</p>
 
 ```
 python3 ESRGAN_RRDB_model.py > test1.txt
@@ -141,7 +145,7 @@ Files test1.txt and test2.txt are identical.
 
 <p align="justify">We can distinguish between three sections.
 This are two header line, the body with weight/bias and the
-ten footer line.</p>
+ten footer lines.</p>
 
 <p align="justify">The printout is still a skeleton consisting
 of key and value in form of a tensor with the size/shape of the
