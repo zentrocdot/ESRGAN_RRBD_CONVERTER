@@ -41,6 +41,11 @@
 # Approach for handling this behaviour:
 # We read all keys from the given model.
 # Then we exchange the last four keywords.
+#
+# To-Do:
+# Catch errors when they occur during operation.
+#
+# Script was checked with pylint.
 
 # Import the standard Python modules.
 import os
