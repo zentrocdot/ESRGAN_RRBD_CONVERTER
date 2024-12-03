@@ -31,7 +31,7 @@ basename = fn_list[0]
 extension = fn_list[1]
 
 # Create the save name.
-save_name = basename + "_CONV_NEW" + extension
+save_name = basename + "_CONV" + extension
 
 # Reset screen.
 def reset_term() -> None:
