@@ -55,6 +55,10 @@ warnings.filterwarnings('ignore', category=FutureWarning)
 # Get the model name from the command line.
 model_name = sys.argv[1]
 
+if model_name is None:
+    print("No model given. Bye!")
+    os._exit(1)
+
 # Get basename and extension.
 file_name = os.path.basename(model_name)
 fn_list = os.path.splitext(file_name)
@@ -62,7 +66,7 @@ basename = fn_list[0]
 extension = fn_list[1]
 
 # Create the save name.
-save_name = basename + "_CVTD_NEW" + extension
+save_name = basename + "_CVTD" + extension
 
 # Print header to screen.
 print("***  ESRGAN CONVERTER  ***")
@@ -88,9 +92,11 @@ N = 4
 ref_list = ["model.8.weight", "model.8.bias",
             "model.10.weight","model.10.bias"]
 conv_list = key_list[-N:]
-print("Reference keywords to found keywords:")
-print(ref_list)
-print(conv_list)
+res = ref_list == conv_list
+if res == False:
+    print("Reference keywords to found keywords:")
+    print(ref_list)
+    print(conv_list)
 # Create the conversion table dict.
 # Parametrised variables:
 #   "HRconv.weight": "model.8.weight",
@@ -112,10 +118,13 @@ CKT_DICT = {
             conv_list[3]: "conv_last.bias"
            }
 
+# Set error message string.
+ERR_STR_0 = "Could not finish converting the model. Bye!"
+ERR_STR_1 = "Could not saving the converted model. Bye!"
+
 # ++++++++++++++++++++
 # Main script function
 # ++++++++++++++++++++
-#def main(file_name: str, save_name: str, pretrained_net: collections.OrderedDict) -> None:
 def main(file_name: str, save_name: str, pretrained_net: OrderedDict) -> None:
     '''Main script function.'''
     # Set the exchange patterns and string.
@@ -144,15 +153,18 @@ def main(file_name: str, save_name: str, pretrained_net: OrderedDict) -> None:
                 # Rewrite key containing weight and bias.
                 if pattern[2] in new_k:
                     new_k = new_k.replace(substr[2], substr[3])
-                    print(new_k)
                 elif pattern[3] in k:
                     new_k = new_k.replace(substr[4], substr[5])
-                    print(new_k)
             else:
-                new_k = CKT_DICT[k]
-                print(new_k)
-        # Assign tensor to key.
-        new_net_clean[new_k] = v
+                try:
+                    new_k = CKT_DICT[k]
+                except KeyError as err:
+                    #print(traceback.format_exc())
+                    print("KeyError:", err)
+                    print(ERR_STR_0)
+                    return None
+        # Try to assign tensor to key.
+            new_net_clean[new_k] = v
     # Overwrite the pretrained net.
     pretrained_net = new_net_clean
     # Try to save new model.
@@ -161,7 +173,7 @@ def main(file_name: str, save_name: str, pretrained_net: OrderedDict) -> None:
     except RuntimeError as err:
         #print("Error:", err)
         #print(traceback.format_exc())
-        print("Could not finish saving the converted model. Bye!")
+        print(ERR_STR_1)
         return None
     # Print message.
     print("... conversion completed!")
