@@ -150,6 +150,12 @@ or conversion table for the keys which looks like:</p>
 to consider while converting that given tensor shape is the
 tensor shape which is required by the final model.</p>
 
+<p align="justify">RealESRGAN has its own naming convention, which is
+similar but not the same. Within the models that are compatible with 
+the approach of xinntao, I can easily convert back and forth. I found
+further differences in other ESRGAN models that require a further
+investigation.</p>
+
 ## Description of What Is Implemented So Far
 
 <p align="justify">I have converted the original supplied converter
