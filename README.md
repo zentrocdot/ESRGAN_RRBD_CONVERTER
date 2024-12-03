@@ -221,7 +221,7 @@ python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 <p align="justify">if you run the experimental converter.</p>
 
 ```
-lucifer@hades:~/ESRGAN/models$ python3 experimentell_converter_RRDB_models.py 8x_NMKD-Superscale_150000_G.pth
+lucifer@hades:~/ESRGAN/models$ python3 experimenta_converter_RRDB_models.py 8x_NMKD-Superscale_150000_G.pth
 ```
 
 <p align="justify">the output in the terminal window is as follows:</p>
