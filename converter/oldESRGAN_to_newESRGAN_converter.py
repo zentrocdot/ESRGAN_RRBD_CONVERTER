@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-'''Experimental ESRGAN converter.'''
+'''Old ESRGAN to new ESRGAN converter.'''
+# pylint: disable=unused-import
+# pylint: disable=protected-access
 # pylint: disable=invalid-name
-# pylint: disable=unneeded-not
 # pylint: disable=unused-variable
-# pylint: disable=broad-except
 # pylint: disable=redefined-outer-name
+# pylint: disable=singleton-comparison
 #
 # Version 0.0.0.3
 #
@@ -53,10 +54,15 @@ import torch
 warnings.filterwarnings('ignore', category=FutureWarning)
 
 # Get the model name from the command line.
-model_name = sys.argv[1]
+if len(sys.argv) > 1:
+    model_name = sys.argv[1]
+else:
+    model_name = None
 
+# If model name is None exit script.
 if model_name is None:
-    print("No model given. Bye!")
+    exit_message = "No model given. Bye!"
+    print(exit_message)
     os._exit(1)
 
 # Get basename and extension.
@@ -77,9 +83,11 @@ model_content = torch.load(file_name)
 # If some keywords not in the model content it must be a new model.
 weight_str = 'model.0.weight'
 bias_str = 'model.0.bias'
+exit_message = "Nothing to do! Is a NEW ESRGAN model, a " + \
+               "RealESRGAN model or an unknown model. Bye!"
 # Check the keywords in the model content.
-if not (weight_str and bias_str) in model_content:
-    print("Nothing to do! Is a NEW ESRGAN, a RealESRGAN or an unknown model. Bye!")
+if (weight_str and bias_str) not in model_content:
+    print(exit_message)
     os._exit(127)
 
 # Loop over the keys in model content.
