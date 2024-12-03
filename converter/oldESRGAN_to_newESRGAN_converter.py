@@ -6,7 +6,7 @@
 # pylint: disable=broad-except
 # pylint: disable=redefined-outer-name
 #
-# Version 0.0.0.2
+# Version 0.0.0.3
 #
 # (C) 2024 zentrocdot
 #
