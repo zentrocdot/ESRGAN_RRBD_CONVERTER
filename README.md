@@ -10,7 +10,8 @@ converters can be found in folder <code>converter</code>.
 Bonus material are the standalone upscalers for ESRGAN and
 RealESRGAN (The latter two are rudimentarily documented). Last
 standalone converter versions can be found in folder
-<code>converter</code>.</p>
+<code>converter</code>. For the other stuff read the 
+documentation.</p>
 
 ---
 
