@@ -74,7 +74,7 @@ def upscale_image_realesrgan(filename, savename, upscaler, outscale, device):
     else:
         outscale = int(outscale)
     # Set the netscale. Check which number for netscale should be used?
-    netscale = 2
+    netscale = 4
     # Set some other parameters. Check the parameter for future work.
     tile = 0
     gpu_id = None
