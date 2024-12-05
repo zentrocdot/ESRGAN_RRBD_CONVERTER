@@ -2,12 +2,14 @@
 
 ### SHORT DESCRIPTION OF the REPOSITORY
 
-<p align="justify">Resources for converting of models from old ESRGAN
-to new ESRGAN architecture. Resources for converting RealESRGAN models
-to new ESRGAN models. There is also a new converter for converting 
-new ESRGAN models to RealESRGAN models. Bonus material are the standalone
-upscalers for ESRGAN and RealESRGAN (The latter two are rudimentarily
-documented). Last standalone converter versions can be found in folder
+<p align="justify">Resources for converting of models from old 
+ESRGAN to new ESRGAN architecture. Resources for converting 
+RealESRGAN models to new ESRGAN models. There is also a new
+converter for converting new ESRGAN models to RealESRGAN models.
+These converters can be found in folder <code>converter</code>.
+Bonus material are the standalone upscalers for ESRGAN and
+RealESRGAN (The latter two are rudimentarily documented). Last
+standalone converter versions can be found in folder
 <code>converter</code>.</p>
 
 ---
