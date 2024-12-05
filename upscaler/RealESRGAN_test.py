@@ -123,4 +123,4 @@ if __name__ == "__main__":
     # Reset terminal.
     reset_term()
     # Call the main function.
-    upscale_image_realesrgan(file_name, save_name, upscaler, outscale, device)
+    main(file_name, save_name, upscaler, outscale, device)
