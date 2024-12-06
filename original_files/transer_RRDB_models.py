@@ -2,19 +2,8 @@ import os
 import torch
 import RRDBNet_arch as arch
 
-import warnings
-warnings.filterwarnings('ignore', category=FutureWarning)
-
-#pretrained_net = torch.load('./models/RRDB_ESRGAN_x4.pth')
-#save_path = './models/RRDB_ESRGAN_x4.pth'
-#pretrained_net = torch.load('4x-UltraSharp.pth')
-#save_path = '4x_test.pth'
-
-#pretrained_net = torch.load('4x_NMKD-Siax_200k.pth')
-#save_path = '4x_siax_test.pth'
-
-pretrained_net = torch.load('4xLSDIRplus.pth')
-save_path = '4xLSDIRplus_mod.pth'
+pretrained_net = torch.load('./models/RRDB_ESRGAN_x4.pth')
+save_path = './models/RRDB_ESRGAN_x4.pth'
 
 crt_model = arch.RRDBNet(3, 3, 64, 23, gc=32)
 crt_net = crt_model.state_dict()
