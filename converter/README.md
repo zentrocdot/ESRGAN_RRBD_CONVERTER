@@ -31,8 +31,8 @@ architecture to another, I do not add anything, remove anything
 or change anything in the weight and bias values.</p>
 
 <p align="justify">During the conversions, I make sure that the data
-structures are adhered to exactly. For example, I use dict and
-OrderedDict if the underlying model would do the same.</p>
+structures are adhered to exactly. For example, I use <i>dict</i> and
+<i>OrderedDict</i> if the underlying model would do the same.</p>
 
 ## Motivation
 
