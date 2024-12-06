@@ -1,5 +1,5 @@
 # ESRGAN RRBG CONVERTER [![Contact - Discord](https://img.shields.io/badge/Contact-Discord-6699ff)](https://discord.gg/bHFQfTwfAJ)
-[![GitHub - ESRGAN](https://img.shields.io/badge/GitHub-ESRGAN-2ea44f)](https://github.com/xinntao/ESRGAN) [![GitHub  - RealEsrGAN](https://img.shields.io/badge/GitHub_-RealESRGAN-9933ff)](https://github.com/xinntao/Real-ESRGAN) [![Contact - OpenModelDB](https://img.shields.io/badge/Contact-OpenModelDB-0000ff)](https://openmodeldb.info/)
+[![GitHub - ESRGAN](https://img.shields.io/badge/GitHub-ESRGAN-2ea44f)](https://github.com/xinntao/ESRGAN) [![GitHub  - RealEsrGAN](https://img.shields.io/badge/GitHub_-RealESRGAN-9933ff)](https://github.com/xinntao/Real-ESRGAN) [![Contact - OpenModelDB](https://img.shields.io/badge/Contact-OpenModelDB-0033cc)](https://openmodeldb.info/)
 
 ### SHORT DESCRIPTION OF the REPOSITORY
 
