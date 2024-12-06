@@ -80,8 +80,9 @@ from different other sources.</p>
 my <i>Lazy Image Upscaler</i>. To be able to test more than the given
 four models from xinntao I searched and collected other ERSGAN models
 and tried them out, most of the time without success. One model in use
-by the web user interface <i>AUTOMATIC1111</i> [5] was also working. The
-usage of other models from other sources failed for the time being.</p>
+by the web user interface <i>AUTOMATIC1111</i> [5] was working out of 
+the box. The usage of other models from other sources failed for the
+time being.</p>
 
 <p align="justify">I will use the ERSGAN method (and the RealERSGAN) in
 his given form from xinntao independend from other software tools. The 
@@ -149,9 +150,9 @@ or conversion table for the keys which looks like:</p>
     "model.10.bias"                      ->  "conv_last.bias"
 ```
 
-<p align="justify">The value to the key is a tensor. One has
-to consider while converting that given tensor shape is the
-tensor shape which is required by the final model.</p>
+<p align="justify">The value related to the key is a tensor.
+One has to consider while converting that given tensor shape
+is the tensor shape which is required by the final model.</p>
 
 <p align="justify">RealESRGAN has its own naming convention, which is
 similar but not the same. Within the models that are compatible with 
@@ -180,21 +181,21 @@ ESRGAN and an upscaler for RealESRGAN. Both are upscaling an
 image and simply save them.</p>
 
 <p align="justify">I used these two upscalers next to an
-experimental version of my Lazy Image Upscaler to check that 
-the converter are working the right way.</p>
+experimental version of my <i>Lazy Image Upscaler</i> to
+check that the converter are working the right way.</p>
 
 ## Easy Way to Test the Converter
 
 ### Installation
 
-Clone this github repository.
+Clone this github repository and move into the directory 
 
 ```
 git clone https://github.com/zentrocdot/ESRGAN_RRBD_CONVERTER.git
 cd ESRGAN_RRDB_CONVERTER
 ```
 
-Or use the zip-file or siply download the files, which you need.
+or use the zip-file or simply download the files, which you need.
 
 ### How to Use the Main OLD Converter
 
@@ -227,7 +228,7 @@ python3 converter_RRDB_models.py <upscaler_model_file_name.pth>
 
 ## Conversion Process
 
-<p align="justify">if you run the experimental converter.</p>
+<p align="justify">If you run the experimental converter.</p>
 
 ```
 lucifer@hades:~/ESRGAN/models$ python3 experimenta_converter_RRDB_models.py 8x_NMKD-Superscale_150000_G.pth
@@ -386,18 +387,18 @@ the <i>ESRGAN RRDB CONVERTER</i> is looking as follows:</p>
 
 ```bash
     └── esrgan_rrbd_converter
+        ├── images
         ├── converter
         ├── upscaler
         ├── old_stuff
-        ├── original
-        ├── tools
-        ├── images
+        ├── original_files
+        ├── tool_scripts
         ├── test_scripts
         └── helper_scripts
 ```
 
-<p align="justify">The folder <code>original</code> contains the original 
-sources from xinntao [1]. In the folder <code>tools</code> there are tools 
+<p align="justify">The folder <code>original_files</code> contains the original 
+sources from xinntao [1]. In the folder <code>tool_scripts</code> there are tools 
 like the one for analysing the model structure. The folder <code>scripts
 </code> contains the current converter.</p> 
 
